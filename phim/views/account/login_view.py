@@ -15,7 +15,7 @@ class UserLoginView(View):
 
     def post(self, request, *args, **kwargs):
         login_form = UserLoginForm(data=request.POST)
-        
+        print( login_form)
         if login_form.is_valid():
             username = login_form.cleaned_data['username']
             password = login_form.cleaned_data['password']
@@ -24,13 +24,10 @@ class UserLoginView(View):
 
             if user:
                 login(request,user)
-                messages.success(request, f"Đăng nhập thành công!"
-                                        f"Chào mừng{user.username}.")
-                return redirect('')
+                messages.success(request, f"Đăng nhập thành công!")
+                return redirect('phim:home')
             else:
-                messages.error(request,
-                               f"Thông tin đăng nhập không hợp lệ: {username} vui lòng kiểm tra lại!"
-                               )
+                messages.error(request,"Thông tin đăng nhập không hợp lệ, vui lòng kiểm tra lại!" )
                 return render(request, self.template_name,self.context_object)
             
         else:

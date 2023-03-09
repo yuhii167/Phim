@@ -1,11 +1,12 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import logout
 from django.contrib import messages
 from django.shortcuts import render,redirect
 from django.views.generic import View
 
+
 class UserLogoutView(View):
 
-    template_name = 'account/logout.html'
+    template_name = 'account/home.html'
 
     def get(self, request):
         logout(request)

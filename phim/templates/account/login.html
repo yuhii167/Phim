@@ -6,8 +6,7 @@
 {% endblock title %}
 
 {% block content %}
-<body>
-	
+
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
@@ -32,7 +31,7 @@
                             Tài khoản
 						</span>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Username is required">
+					<div class="wrap-input100 validate-input" data-validate = "Nhập tài khoản">
 						{{ login_form.username }}
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
@@ -46,8 +45,8 @@
 							Forgot?
 						</a>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						{{ login_form.username }}
+					<div class="wrap-input100 validate-input" data-validate = "Nhập mật khẩu">
+						{{ login_form.password }}
 						<span class="focus-input100"></span>
 					</div>
 
