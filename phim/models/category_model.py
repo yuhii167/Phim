@@ -25,5 +25,6 @@ class Category(models.Model):
         super(Category, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse('phim:category_film',
+        return reverse('phim:category_movies',
                        kwargs={'slug': self.slug})
+    

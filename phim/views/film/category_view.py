@@ -1,12 +1,13 @@
 from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
+from phim.models.category_model import Category
 
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     CreateView,
     ListView,
-    UpdateView
+  
 )
 
 class CategoriesListView(ListView):
@@ -26,8 +27,7 @@ class CategoryCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     def form_valid(self, form):
         form.instance.save()
         messages.success(self.request, f"'{form.instance.name}' "
-                                       f"gửi thành công. Bạn sẽ được "
-                                       f"thông báo khi nó được chấp thuận."
-                                       f"Cảm ơn !!!")
+                                       f"Gửi thành công."
+                                       )
         return redirect('/')
 

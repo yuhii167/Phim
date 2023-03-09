@@ -12,8 +12,10 @@ Sprint thứ 1:
               + Add View Trang Chủ, Đăng Nhập/ Đăng kí(9/3/2023)
               + POST Đăng nhập/ Đăng kí(9/3/2023)
               + Tạo đường dẫn(9/3/2023)
-              + Tạo model,view cho Gategory(9/3/2023)
+              + Tạo model,View cho Gategory(9/3/2023)
+              + Tạo model,View cho Movies(9/3/2023)
               
+
               
               
               
