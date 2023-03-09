@@ -1,8 +1,10 @@
 from django.db import models
 import uuid
+from django.urls import reverse
 from phim.models.category_model import Category
 from django.utils.text import slugify
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 
 #Ung dung T3
 from taggit.managers import TaggableManager
@@ -30,14 +32,16 @@ class Movie(models.Model):
     views = models.PositiveIntegerField(default=0)
    
     category = models.ForeignKey(Category, on_delete=models.CASCADE,
-                                 related_name='Category')
-    videos=models.ManyToManyField('Video')
+                                 related_name='movies')
+    movies = models.CharField(max_length=500)
     date_published = models.DateTimeField(null=True, blank=True,
                                           default=timezone.now)
-    flyer=models.ImageField(upload_to='flyers',blank=True,null=True)
+    flyer=CloudinaryField('img')
+
     class Meta:
         unique_together = ("title",)
-        ordering = ('-date_published',)
+        verbose_name = 'movie'
+        verbose_name_plural = 'movies'
 
     def __str__(self):
         return self.title
@@ -46,7 +50,7 @@ class Movie(models.Model):
         self.slug = slugify(self.title, allow_unicode=True)
         super(Movie, self).save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        return reverse('phim:movies',
+                       kwargs={'slug': self.slug})
     
-class Video(models.Model):
-    title:str = models.CharField(max_length=225,blank=True,null=True)
-    file=models.FileField(upload_to='movies')

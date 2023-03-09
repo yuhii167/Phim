@@ -11,6 +11,7 @@
 
 <div class="slider movie-items">
 	<div class="container">
+		{% if movies %}
 		<div class="row">
 			<div class="social-link">
 				<p>Follow us: </p>
@@ -19,10 +20,11 @@
 				<a href="#"><i class="ion-social-googleplus"></i></a>
 				<a href="#"><i class="ion-social-youtube"></i></a>
 			</div>
-			{% if moives %}
 	    	<div  class="slick-multiItemSlider">
+			
+				{% for movie in movies %}
 	    		<div class="movie-item">
-					{% for movie in movies %}
+					
 	    			<div class="mv-img">
 	    				<a href="#"><img src="{{ movie.flyer.url}}" alt="" width="285" height="437"></a>
 	    			</div>
@@ -33,8 +35,9 @@
 	    				<h6><a href="#">{{ movie.title.url}}</a></h6>
 	    				<p><i class="ion-android-star"></i><span>?</span> /10</p>
 	    			</div>
-					{% endfor %}
+				
 	    		</div>
+				{% endfor %}
 			{% else %}
 				<center>
 					<h1>NOTHING</h1>

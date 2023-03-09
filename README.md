@@ -16,6 +16,7 @@ Sprint thứ 1:
               + Tạo model,View cho Movies(9/3/2023)
               + Thêm API/ Router(9/3/2023)
               + Bắt đầu đổ dữ liệu Trang chủ(9/3/2023)
+              + Hoàn thành đổ dữ liệu Video Sroll (9/3/2023)
               
 
               
