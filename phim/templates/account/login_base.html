@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Basic need -->
+	<title>{% block title %}Xem Phim Không Bản Quyền {% endblock title %}</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="profile" href="#">
+	<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %} "/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}" >
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+    <!--Google Font-->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+	<!-- Mobile specific meta -->
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone-no">
+
+	<!-- CSS files -->
+    {% block stylesheet %}
+	<link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock stylesheet %}
+
+</head>
+<body>
+<!--preloading-->
+<div id="preloader">
+    <a href="{% url 'phim:home'%}" class="logo" src="{% static 'images/logo1.png' %}"  width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--end of preloading-->
+
+{% block content %}
+{% endblock content %}
+
+<!-- footer section-->
+<footer class="ht-footer">
+	<div class="container">
+		<div class="flex-parent-ft">
+			<div class="flex-child-ft item1">
+				 <a href="index-2.html"><img class="logo" src="images/logo1.png" alt=""></a>
+				 <p>5th Avenue st, manhattan<br>
+				New York, NY 10001</p>
+				<p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+			</div>
+			<div class="flex-child-ft item2">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="#">About</a></li> 
+					<li><a href="#">Blockbuster</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Forums</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Help Center</a></li>
+				</ul>
+			</div>
+			<div class="flex-child-ft item3">
+				<h4>Legal</h4>
+				<ul>
+					<li><a href="#">Terms of Use</a></li> 
+					<li><a href="#">Privacy Policy</a></li>	
+					<li><a href="#">Security</a></li>
+				</ul>
+			</div>
+			<div class="flex-child-ft item4">
+				<h4>Account</h4>
+				<ul>
+					<li><a href="#">My Account</a></li> 
+					<li><a href="#">Watchlist</a></li>	
+					<li><a href="#">Collections</a></li>
+					<li><a href="#">User Guide</a></li>
+				</ul>
+			</div>
+			<div class="flex-child-ft item5">
+				<h4>Newsletter</h4>
+				<p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+				<form action="#">
+					<input type="text" placeholder="Enter your email...">
+				</form>
+				<a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="ft-copyright">
+		<div class="ft-left">
+			<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+		</div>
+		<div class="backtotop">
+			<p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+		</div>
+	</div>
+</footer>
+<!-- end of footer section-->
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/plugins2.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js/main.js'%}"></script>
+</body>
+
+
+</html>

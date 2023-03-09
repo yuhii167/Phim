@@ -6,39 +6,8 @@
 
 
         
-<!--end of login form popup-->
-<!--signup form popup-->
-<div class="login-wrapper"  id="signup-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <h3>sign up</h3>
-        <form method="post" action="#">
-            {% csrf_token %}
-            <div class="row">
-                <div data-validate = "Nhập tên tài khoản">
-                    {{ register_form.username }}
-                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-                </div>
-            </div>
-           
-            <div class="row">
-                <div data-validate="Nhập mật khẩu">
-                    {{ register_form.password1 }}
-                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
-                </div>
-            </div>
-             <div class="row">
-                <div data-validate="Nhập lại mật khẩu">
-                    {{ register_form.password2 }}
-                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
-                </div>
-            </div>
-           <div class="row">
-             <button type="submit">sign up</button>
-           </div>
-        </form>
-    </div>
-</div>
+
+
 <!--end of signup form popup-->
 
 <!-- BEGIN | Header -->
@@ -68,9 +37,9 @@
 							Home <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
-								<li><a href="index-2.html">Home 01</a></li>
-								<li><a href="homev2.html">Home 02</a></li>
-								<li><a href="homev3.html">Home 03</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								
 							</ul>
 						</li>
 						<li class="dropdown first">
