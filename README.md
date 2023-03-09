@@ -19,6 +19,9 @@ Sprint thứ 1:
               + Hoàn thành đổ dữ liệu Video Sroll (9/3/2023)
               + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023)
               
+              
+              Thời gian làm việc: 7 tiếng/ngày
+              
 
               
               
