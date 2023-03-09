@@ -6,7 +6,7 @@ from phim.views.account.register_view import UserRegisterView
 from phim.views.account.logout_view import UserLogoutView
 from phim.views.account.login_view import UserLoginView
 from phim.views.account.user_view import UserView
-#from phim.views.film.movie_view import MovieListView
+from phim.views.film.movie_view import MovieListView
 
 app_name = "phim"
 
@@ -32,11 +32,11 @@ urlpatterns = [
         name='logout'
     ),
     #category-phim/<str:slug>/
-    # path(
-    #     route='category/<str:slug>/phim',
-    #     view=CategoryMovieListView.as_view(),
-    #     name='category_phim'
-    # ),
+    path(
+        route='category/<str:slug>/phim',
+        view=MovieListView.as_view(),
+        name='category_phim'
+    ),
 
     #home
     path(
