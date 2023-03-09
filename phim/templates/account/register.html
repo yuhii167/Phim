@@ -1,0 +1,48 @@
+
+{% load static %}
+
+
+
+				<span class="login100-form-title p-b-41">
+					Đăng kí
+				</span>
+				<form action="{% url 'phim:register' %}" class="login100-form p-b-33 p-t-5"
+                      method="post" novalidate>
+                    {% csrf_token %}
+
+                    <div class="wrap-input100 validate-input" data-validate = "Nhập tên tài khoản">
+						{{ register_form.username }}
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Nhập email">
+						{{ register_form.email }}
+						<span class="focus-input100" data-placeholder="&#xe818;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Nhập mật khẩu">
+						{{ register_form.password1 }}
+						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Nhập lại mật khẩu">
+						{{ register_form.password2 }}
+						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-32">
+						<button type="submit" class="login100-form-btn">
+							Đăng kí
+						</button>
+                    </div>
+                    <hr />
+                    <div class="text-center">
+                      <a class="small text-primary" href="{% url 'phim:login' %}"
+                        >Bạn đã có sẵn tài khoản!</a>
+                    </div>
+                    <div class="text-center font-weight-bold">
+                      <a class="small text-info" href="#">
+                          Trang chủ
+                      </a>
+                    </div>
+				</form>

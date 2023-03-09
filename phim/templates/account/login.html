@@ -1,0 +1,44 @@
+{% extends 'phim_base.html' %}
+{% load static %}
+
+{% block title %}
+    Đăng Nhập
+{% endblock title %}
+
+{% block content %}
+    <h1>Login</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div data-validate="Nhập tài khoản">
+                {{ login_form.username }}
+                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div data-validate="Nhập mật khẩu">
+                {{ login_form.password }}
+                <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+        </div>
+        <div class="row">
+            <div class="remember">
+                <div>
+                    <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                </div>
+                <a href="#">Forget password ?</a>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit">Login</button>
+       </div>
+    </form>
+    <div class="row">
+        <p>Or via social</p>
+        <div class="social-btn-2">
+            <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+            <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+        </div>
+    </div>
+  
+{% endblock content %}
