@@ -25,6 +25,7 @@ Sprint thứ 1:
 
               
               
-              
+              ![image](https://user-images.githubusercontent.com/94046317/224083211-dc94b142-6d80-430d-bb04-317ac635d8e4.png)
+
 
 
