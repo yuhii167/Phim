@@ -18,6 +18,9 @@ Sprint thứ 1:
               + Bắt đầu đổ dữ liệu Trang chủ(9/3/2023)
               + Hoàn thành đổ dữ liệu Video Sroll (9/3/2023)
               
+              
+              Thời gian làm việc: 7 tiếng/ngày
+              
 
               
               
