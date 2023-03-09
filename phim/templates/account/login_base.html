@@ -4,12 +4,20 @@
 
 <head>
 	<!-- Basic need -->
-	<title>{% block title %}Xem Phim Không Bản Quyền {% endblock title %}</title>
+	<title>Xem Phim Không Bản Quyền |{% block title %}{% endblock title %} </title>
+	<link rel="icon" href="{% static 'images/favicon.ico' %}"
+          type="image/gif" sizes="16x16">
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<link rel="profile" href="#">
+	  <!--Google Font-->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+	<!-- Mobile specific meta -->
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone-no">
+	{% block stylesheet %}
 	<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %} "/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
@@ -30,14 +38,10 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
-    <!--Google Font-->
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
-	<!-- Mobile specific meta -->
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone-no">
+
 
 	<!-- CSS files -->
-    {% block stylesheet %}
+    
 	<link rel="stylesheet" href="{% static 'css/plugins.css' %}">
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% endblock stylesheet %}
@@ -54,9 +58,10 @@
 </div>
 <!--end of preloading-->
 
+
 {% block content %}
 {% endblock content %}
-
+{% block footer %}
 <!-- footer section-->
 <footer class="ht-footer">
 	<div class="container">
@@ -114,8 +119,9 @@
 		</div>
 	</div>
 </footer>
+{% endblock footer %}
 <!-- end of footer section-->
-
+{% block scripts %}
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/plugins.js' %}"></script>
 <script src="{% static 'js/plugins2.js' %}"></script>
@@ -135,6 +141,7 @@
 	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
 <!--===============================================================================================-->
 	<script src="{% static 'js/main.js'%}"></script>
+{% endblock scripts %}
 </body>
 
 
