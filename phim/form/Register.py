@@ -11,7 +11,7 @@ class UserRegisterForm(UserCreationForm):
         super(UserRegisterForm,self).__init__(*args, **kwargs)
         self.fields['username'].widget.attrs.pop("autofocus",None)
 
-    email = forms.EmailField(max_length=100, required=True, widget=
+    email = forms.EmailField(max_length=200, required=True, widget=
                              forms.EmailInput(attrs={
                                 "name" : "email", "class" : "input100",
                                 "placeholder" : "Email"
@@ -20,14 +20,14 @@ class UserRegisterForm(UserCreationForm):
                              )
     password1 = forms.CharField(widget=
                                forms.PasswordInput(attrs={
-                                    "name" : "password", "class" : "inpit100",
+                                    "name" : "password", "class" : "input100",
                                     "placeholder" : " Mật khẩu"
                                }),
                                help_text='Nhập mật khẩu'
                                )
     password2 = forms.CharField(widget=
                                forms.PasswordInput(attrs={
-                                    "name" : "password", "class" : "inpit100",
+                                    "name" : "password", "class" : "input100",
                                     "placeholder" : " Mật khẩu"
                                }),
                                help_text='Xác nhận lại mật khẩu'

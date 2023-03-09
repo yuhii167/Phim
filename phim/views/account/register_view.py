@@ -23,7 +23,7 @@ class UserRegisterView(View):
         return render(request,self.template_name,self.context_object)
 
     def post(self, request, *args, **kwargs):
-        
+        print('hello')
         register_form = UserRegisterForm(request.POST)
 
         if register_form.is_valid():
@@ -33,7 +33,7 @@ class UserRegisterView(View):
 
             current_site = get_current_site(request)
             subject = 'Đã tạo tài khoản thành công'
-    
+            print(user)
             return render(request, self.template_name, self.context_object)
 
         else:
