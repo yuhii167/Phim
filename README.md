@@ -20,7 +20,7 @@ Sprint thứ 1:
               + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023)
               
               
-              Thời gian làm việc: 7 tiếng/ngày
+              Tổng thời lượng code: 8 tiếng
               
 
               
