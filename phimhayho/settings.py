@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     #Ung dung thu 3
     'phim',
     'rest_framework',
-    'cloudinary'
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -95,6 +95,7 @@ cloudinary.config(
   api_key = "454333541723272", 
   api_secret = "aOpfL5Nhh9yPmrG1Uf5CRXUoCoA" 
 )
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 

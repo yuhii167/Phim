@@ -6,7 +6,7 @@ from django.views.generic import View
 
 class UserLogoutView(View):
 
-    template_name = 'account/home.html'
+    template_name = 'account/logout.html'
 
     def get(self, request):
         logout(request)

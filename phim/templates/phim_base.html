@@ -110,13 +110,13 @@
 						</li>                
 						<li><a href="#">Help</a></li>
 						{% if request.user.is_authenticated %}
-						<li><a href="{% url 'phim:login' %}">LOG Out</a></li>
+						<li><a href="{% url 'phim:logout' %}">LOG Out</a></li>
 						<li style="    background-color: #dd003f;
 						color: #ffffff;
 						padding: 5px 25px;
 						-webkit-border-radius: 20px;
 						-moz-border-radius: 20px;
-						border-radius: 20px;"><a href="{% url 'phim:profile' %}">Profile</a></li>
+						border-radius: 20px;"><a href="#">Profile</a></li>
 
 						{% else %}
 						<li><a href="{% url 'phim:login' %}">LOG In</a></li>
