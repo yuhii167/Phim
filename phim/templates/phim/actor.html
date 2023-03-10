@@ -41,20 +41,6 @@
 					<a href="celebritylist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
 					<a  href="celebritygrid01.html" class="grid"><i class="ion-grid "></i></a>
 				</div>
-				<div class="row">
-                {% for actor in actores %}
-					<div class="col-md-12">
-						<div class="ceb-item-style-2">
-							<img src="{{ actor.flyer.url }}" alt="" width="100" height="130">
-							<div class="ceb-infor">
-								<h2><a href="#">{{ actor.name }}</a></h2>
-								<span>{{ actor.sex }}</span>
-								<p>{{ actor.info }}</p>
-							</div>
-						</div>
-					</div>
-                {% endfor %}
-		
 				<div class="topbar-filter">
 					<label>Reviews per page:</label>
 					<select>
@@ -73,7 +59,24 @@
 						<a href="#"><i class="ion-arrow-right-b"></i></a>
 					</div>
 				</div>
+			
+		
+				<div class="row">
+                	{% for actor in actores %}
+					<div class="col-md-12">
+						<div class="ceb-item-style-2">
+							<img src="{{ actor.flyer.url }}" alt="" width="100" height="130">
+							<div class="ceb-infor">
+								<h2><a href="#">{{ actor.name }}</a></h2>
+								<span>{{ actor.sex }}</span>
+								<p>{{ actor.info }}</p>
+							</div>
+						</div>
+				</div>
+                	{% endfor %}
+				</div>
 			</div>
+		
 			<div class="col-md-3 col-xs-12 col-sm-12">
 				<div class="sidebar">
 						<div class="searh-form">
@@ -121,43 +124,11 @@
 							</div>
 						</form>
 					</div>
-					<div class="ads">
-						<img src="images/uploads/ads1.png" alt="">
-					</div>
-					<div class="celebrities">
-						<h4 class="sb-title">featured celebrity</h4>
-						<div class="celeb-item">
-							<a href="#"><img src="images/uploads/ava1.jpg" alt=""></a>
-							<div class="celeb-author">
-								<h6><a href="#">Samuel N. Jack</a></h6>
-								<span>Actor</span>
-							</div>
-						</div>
-						<div class="celeb-item">
-							<a href="#"><img src="images/uploads/ava2.jpg" alt=""></a>
-							<div class="celeb-author">
-								<h6><a href="#">Benjamin Carroll</a></h6>
-								<span>Actor</span>
-							</div>
-						</div>
-						<div class="celeb-item">
-							<a href="#"><img src="images/uploads/ava3.jpg" alt=""></a>
-							<div class="celeb-author">
-								<h6><a href="#">Beverly Griffin</a></h6>
-								<span>Actor</span>
-							</div>
-						</div>
-						<div class="celeb-item">
-							<a href="#"><img src="images/uploads/ava4.jpg" alt=""></a>
-							<div class="celeb-author">
-								<h6><a href="#">Justin Weaver</a></h6>
-								<span>Actor</span>
-							</div>
-						</div>
-					</div>
 				</div>
+					
 			</div>
 		</div>
+			
 	</div>
 </div>
 {% endblock content %}
