@@ -26,14 +26,16 @@ Sprint thứ 1:
               + Tạo model,View cho Gategory(9/3/2023)
               + Tạo model,View cho Movies(9/3/2023)
               + Thêm API/ Router(9/3/2023)
-              + Bắt đầu đổ dữ liệu Trang chủ(9/3/2023)
-              + Hoàn thành đổ dữ liệu Video Sroll (9/3/2023)
+              + Đổ dữ liệu Trang chủ(9/3/2023)
               + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023)
               
+
+
               + Hoàn thành LogOut(10/3/2023)
+              + Tạo model cho Actor(10/3/2023)
 
               
-              Tổng thời gian làm việc: 7 tiếng
+              Tổng thời gian làm việc: 8 tiếng
               
 
               

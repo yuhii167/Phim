@@ -4,10 +4,11 @@ from django.urls import reverse
 from phim.models.category_model import Category
 from django.utils.text import slugify
 from django.utils import timezone
-from cloudinary.models import CloudinaryField
+
 
 #Ung dung T3
 from taggit.managers import TaggableManager
+from cloudinary.models import CloudinaryField
 
 #model phim
 class Movie(models.Model):
@@ -15,17 +16,20 @@ class Movie(models.Model):
     #trang thai phim
     DRAFTED = "RAW"
     FULLHD = "FULLHD"
+    COMINGSOON = "COMINGSOON"
 
     #lua chon
     STATUS_CHOICES = (
         (DRAFTED, 'RAW'),
         (FULLHD, 'FULLHD'),
+        (COMINGSOON,'COMINGSOON'),
     )
 
     title:str=models.CharField(max_length=225)
     description:str=models.TextField()
     created =models.DateTimeField(auto_now_add=True)
     uuid=models.UUIDField(default=uuid.uuid4,unique=True)
+    contry = models.CharField(max_length=100)
     slug = models.SlugField()
     status = models.CharField(max_length=10, choices=STATUS_CHOICES,
                               default='RAW')

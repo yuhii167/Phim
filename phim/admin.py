@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models.Users import Profile
 from .models.category_model import Category
 from .models.movie_model import Movie
+from .models.actor import Actor
 
 #Đăng kí profile ở Admin
 class ProfileAdmin(admin.ModelAdmin):
@@ -11,6 +12,8 @@ class ProfileAdmin(admin.ModelAdmin):
 
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Movie)
+
+admin.site.register(Actor)
 
 #Dang ki Gategory Admin
 class CategoryAdmin(admin.ModelAdmin):
