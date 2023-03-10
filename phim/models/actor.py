@@ -10,8 +10,8 @@ from cloudinary.models import CloudinaryField
 class Actor(models.Model):
 
     #Gioi tinh
-    MALE = "MALE"
-    FAMELE = "FAMELE"
+    MALE = "Nam"
+    FAMELE = "Nữ"
     LGBT = "LGBT"
 
     #Lua Chon
