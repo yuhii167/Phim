@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'phim',
     'rest_framework',
     'cloudinary',
+    'taggit'
 ]
 
 MIDDLEWARE = [

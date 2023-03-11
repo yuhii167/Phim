@@ -8,6 +8,7 @@ from phim.views.account.login_view import UserLoginView
 from phim.views.film.actor_view import ActorListView
 from phim.views.film.movie_view import MovieListView
 from phim.views.film.movie_view import MovieListView1
+from phim.views.film.movie_view import MovieDetailView
 
 app_name = "phim"
 
@@ -58,6 +59,13 @@ urlpatterns = [
         route='movie/',
         view=MovieListView1.as_view(),
         name='movie'
+    ),
+
+     path(
+        route='movie/<str:slug>/',
+        view=MovieDetailView.as_view(),
+        name='phimdetail'
+
     ),
 
     
