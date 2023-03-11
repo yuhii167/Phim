@@ -40,9 +40,10 @@ Sprint thứ 1:
               + Tạo model/View/Temp/Url cho Actor(10/3/2023)
               + Đổ dữ liệu cho Actor(10/03/2023)
               
-
+              + Tạo View/Temp cho Phim(11/3/2023)
+              + Đổ dữ liệu cho Phim(11/3/2023)
               
-              Tổng thời gian làm việc: 9 tiếng
+              Tổng thời gian làm việc: 11 tiếng
               
 
               
