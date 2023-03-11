@@ -10,6 +10,7 @@ from phim.models.actor import Actor
 #Ung dung T3
 from taggit.managers import TaggableManager
 from cloudinary.models import CloudinaryField
+from taggit.managers import TaggableManager
 
 #model phim
 class Movie(models.Model):
@@ -46,6 +47,7 @@ class Movie(models.Model):
     DN = models.CharField(max_length=4)
     flyer=CloudinaryField('img')
     stars = models.ManyToManyField(Actor, related_name='movies')
+    tags = TaggableManager(blank=True)
 
     class Meta:
         unique_together = ("title",)
@@ -60,6 +62,6 @@ class Movie(models.Model):
         super(Movie, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse('phim:movies',
+        return reverse('phim:phimdetail',
                        kwargs={'slug': self.slug})
     

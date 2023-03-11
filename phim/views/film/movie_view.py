@@ -6,7 +6,7 @@ from django.views.generic import (
 from phim.models.movie_model import Movie
 from phim.models.category_model import Category
 from phim.models.ads_model import Ads
-from itertools import chain
+from phim.models.actor import Actor
 
 class MovieListView(ListView):
     context_object_name = "movies"
@@ -31,3 +31,18 @@ class MovieListView1(ListView):
         context = super().get_context_data(**kwargs)
         context['movies'] = Movie.objects.all()
         return context
+    
+class MovieDetailView(DetailView):
+    model = Movie
+    template_name = 'phim/phimdetail.html'
+
+    def get_context_data(self, **kwargs):
+        session_key = f"viewed_movie {self.object.slug}"
+        self.object.views += 1
+        self.object.save()
+        self.request.session[session_key] = True
+
+        kwargs['movie'] = self.get_object
+
+        return super().get_context_data(**kwargs)
+    
