@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
 
-from phim.models.movie_model import Movie
 
 #Ung dung thu 3
 from cloudinary.models import CloudinaryField
@@ -26,7 +25,6 @@ class Actor(models.Model):
     info = models.TextField()
     birth = models.DateField()
     flyer = CloudinaryField('Fyler')
-    movies = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='moives')
 
     class Meta:
         unique_together = ("name",)

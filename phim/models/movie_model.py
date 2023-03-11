@@ -6,6 +6,7 @@ from django.utils.text import slugify
 from django.utils import timezone
 
 
+from phim.models.actor import Actor
 #Ung dung T3
 from taggit.managers import TaggableManager
 from cloudinary.models import CloudinaryField
@@ -34,7 +35,9 @@ class Movie(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES,
                               default='RAW')
     views = models.PositiveIntegerField(default=0)
-   
+    time = models.CharField(max_length=100)
+    
+    
     category = models.ForeignKey(Category, on_delete=models.CASCADE,
                                  related_name='movies')
     movies = models.CharField(max_length=500)
@@ -42,6 +45,7 @@ class Movie(models.Model):
                                           default=timezone.now)
     DN = models.CharField(max_length=4)
     flyer=CloudinaryField('img')
+    stars = models.ManyToManyField(Actor, related_name='movies')
 
     class Meta:
         unique_together = ("title",)
