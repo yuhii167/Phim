@@ -20,9 +20,13 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 Sprint thứ 1: 
 
+
               + Hoàn thành xong 1 nửa các tác vụ liên quan đến User(8/3/2023)
               + Tạo model cho Users( Sử dụng sqlLite)
               + Add Template (8/3/2023)
+
+__________________________________________________________________________________________________
+
 
               + Thay đổi chỉnh sửa Template, tạo Layout(9/3/2023)
               + Add View Trang Chủ, Đăng Nhập/ Đăng kí(9/3/2023)
@@ -34,6 +38,7 @@ Sprint thứ 1:
               + Đổ dữ liệu Trang chủ(9/3/2023)
               + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023)
               
+__________________________________________________________________________________________________
 
 
               + Hoàn thành LogOut(10/3/2023)
@@ -44,7 +49,10 @@ Sprint thứ 1:
               + Đổ dữ liệu cho Phim(11/3/2023)
               + Tạo model/view Ads, đổ dữ liệu vào Home(11/3/2023)
               + Hoàn thiện Home(11/3/2023)
+              + Tạo View/Temp/Url cho Chi tiết từng Phim(11/03/2023)
+              + Thêm Taggit(11/03/2023)
 
+__________________________________________________________________________________________________
               
               Tổng thời gian làm việc: 13 tiếng
               
