@@ -37,7 +37,7 @@ class Movie(models.Model):
     views = models.PositiveIntegerField(default=0)
     time = models.CharField(max_length=100)
     
-    
+    trailer = models.CharField(max_length=400)
     category = models.ForeignKey(Category, on_delete=models.CASCADE,
                                  related_name='movies')
     movies = models.CharField(max_length=500)

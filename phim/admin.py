@@ -3,6 +3,7 @@ from .models.Users import Profile
 from .models.category_model import Category
 from .models.movie_model import Movie
 from .models.actor import Actor
+from .models.ads_model import Ads
 
 #Đăng kí profile ở Admin
 class ProfileAdmin(admin.ModelAdmin):
@@ -12,6 +13,7 @@ class ProfileAdmin(admin.ModelAdmin):
 
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Movie)
+admin.site.register(Ads)
 
 admin.site.register(Actor)
 

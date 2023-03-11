@@ -59,6 +59,7 @@ urlpatterns = [
         view=MovieListView1.as_view(),
         name='movie'
     ),
+   
 
     
 ]
