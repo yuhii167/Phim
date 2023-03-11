@@ -46,7 +46,7 @@ urlpatterns = [
     ),
 
     path(
-        route='actor',
+        route='actor/',
         view=ActorListView.as_view(),
         name='actor'
     ),

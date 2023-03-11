@@ -38,29 +38,9 @@
 						<option value="date">Release date Descending</option>
 						<option value="date">Release date Ascending</option>
 					</select>
-					<a href="celebritylist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
-					<a  href="celebritygrid01.html" class="grid"><i class="ion-grid "></i></a>
+					<a href="#" class="list"><i class="ion-ios-list-outline active"></i></a>
+					<a  href="#" class="grid"><i class="ion-grid "></i></a>
 				</div>
-				<div class="topbar-filter">
-					<label>Reviews per page:</label>
-					<select>
-						<option value="range">36 Reviews</option>
-						<option value="saab">18 Reviews</option>
-					</select>
-					
-					<div class="pagination2">
-						<span>Page 1 of 6:</span>
-						<a class="active" href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a href="#">6</a>
-						<a href="#"><i class="ion-arrow-right-b"></i></a>
-					</div>
-				</div>
-			
-		
 				<div class="row">
                 	{% for actor in actores %}
 					<div class="col-md-12">
@@ -74,6 +54,33 @@
 						</div>
 				</div>
                 	{% endfor %}
+				</div>
+				<div class="topbar-filter">
+					{% if is_paginated %}
+
+					<div class="pagination2">
+						
+						{% if page_obj.has_previous %}
+							<a href="?page = 1">Trang đầu</a>
+							<a href="?page ={{ page_obj.previous_page_number }}">Trang trước</a>
+						{% endif %}
+
+						{% for num in page_obj.paginator.page_range %}
+							{% if page_obj.number == num %}
+								<a href="?page={{ num }}">{{num}}</a>
+							{% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+								<a href="?page={{ num }}">{{num}}</a>
+							{% endif %}
+						{% endfor %}
+
+						{% if page_obj.has_next %}
+							<a href="?page ={{ page_obj.next_page_number }}">Trang sau</a>
+							<a href="?page ={{ page_obj.paginator_page_number }}">Trang cuối</a>
+						{% endif %}
+
+					
+					</div>
+					{% endif %}
 				</div>
 			</div>
 		

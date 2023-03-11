@@ -40,6 +40,7 @@ class Movie(models.Model):
     movies = models.CharField(max_length=500)
     date_published = models.DateTimeField(null=True, blank=True,
                                           default=timezone.now)
+    DN = models.CharField(max_length=4)
     flyer=CloudinaryField('img')
 
     class Meta:
