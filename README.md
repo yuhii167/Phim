@@ -1,7 +1,7 @@
 # Chào các bạn!
 <br/>
 <div align="center">
-<img src="https://camo.githubusercontent.com/c8603029e1d7baade74d71c1823bdcdbaa61f08c2bf062a483e02e0f4ace034c/68747470733a2f2f692e67697068792e636f6d2f5254684e30684f5332474f344d2e676966" alt="hi" />
+<img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/django.svg" alt="nguyenducngoc" />
 </div>
 <br/>
 
@@ -49,12 +49,12 @@ ________________________________________________________________________________
 <br/>
     <div align="center">
         <h3> View Layout </h3>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="hi" />
+        <img src="django" alt="hi" />
     </div>
     <div align="center">
         <h3> View Đăng nhập </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
-        <h3> View kí </h3>
+        <h3> View đăng kí </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
         <h3> Đổ dữ liệu từ model vào Home </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_71.png" alt="hi" />
