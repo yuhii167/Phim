@@ -53,9 +53,11 @@ ________________________________________________________________________________
     </div>
     <div align="center">
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
-        <h3> View Đăng kí </h3>
+        <h3> View Đăng nhập </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
-        <h3> View Đăng nhập ( Dự định sẽ hoàn thành đăng nhập bằng Google Hoặc Fb trong t.g sắp tới) </h3>
+        <h3> View Đăng kí  </h3>
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_71.png" alt="hi" />
+        <h3> Đổ dữ liệu từ model vào Home  </h3>
     </div>
 <br/>
 
@@ -69,6 +71,17 @@ ________________________________________________________________________________
               + Hoàn thành LogOut(10/3/2023)
               + Tạo model/View/Temp/Url cho Actor(10/3/2023)
               + Đổ dữ liệu cho Actor(10/03/2023)
+
+<br/>
+    <div align="center">
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_72.png" alt="hi" />
+        <h3> View Logout </h3>
+    </div>
+    <div align="center">
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_73.png" alt="hi" />
+        <h3>Đổ dữ liệu từ model vào Actor </h3>
+    </div>
+<br/>
 
 __________________________________________________________________________________________________     
 11/3/2023
