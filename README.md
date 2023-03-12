@@ -48,16 +48,16 @@ ________________________________________________________________________________
 
 <br/>
     <div align="center">
+        <h3> View Layout </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="hi" />
-        <h3> View Header </h3>
     </div>
     <div align="center">
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
         <h3> View Đăng nhập </h3>
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
+        <h3> View kí </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
-        <h3> View Đăng kí  </h3>
+        <h3> Đổ dữ liệu từ model vào Home </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_71.png" alt="hi" />
-        <h3> Đổ dữ liệu từ model vào Home  </h3>
     </div>
 <br/>
 
@@ -74,12 +74,12 @@ ________________________________________________________________________________
 
 <br/>
     <div align="center">
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_72.png" alt="hi" />
         <h3> View Logout </h3>
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_72.png" alt="hi" />
     </div>
     <div align="center">
+        <h3>Đổ dữ liệu từ model vào Actor </h3>>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_73.png" alt="hi" />
-        <h3>Đổ dữ liệu từ model vào Actor </h3>
     </div>
 <br/>
 
@@ -92,7 +92,12 @@ ________________________________________________________________________________
               + Hoàn thiện Home(11/3/2023)
               + Tạo View/Temp/Url cho Chi tiết từng Phim(11/03/2023)
               + Thêm Taggit(11/03/2023)
-
+<br/>
+    <div align="center">
+        <h3> Đổ dữ liệu từ model vào phimdetail </h3>
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_74.png" alt="hi" />
+    </div>
+<br/>
 __________________________________________________________________________________________________
 12/3/2023        
 
