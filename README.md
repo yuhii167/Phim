@@ -49,9 +49,16 @@ ________________________________________________________________________________
 <br/>
     <div align="center">
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="hi" />
-        <h3> View Hoàn tất Header </h3>
+        <h3> View Header </h3>
+    </div>
+    <div align="center">
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
+        <h3> View Đăng kí </h3>
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
+        <h3> View Đăng nhập ( Dự định sẽ hoàn thành đăng nhập bằng Google Hoặc Fb trong t.g sắp tới) </h3>
     </div>
 <br/>
+
 
 
               
