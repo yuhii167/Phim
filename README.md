@@ -49,7 +49,7 @@ ________________________________________________________________________________
 <br/>
     <div align="center">
         <h3> View Layout </h3>
-        <img src="django" alt="hi" />
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="" />
     </div>
     <div align="center">
         <h3> View Đăng nhập </h3>
