@@ -44,7 +44,17 @@ ________________________________________________________________________________
               + Tạo model,View cho Movies(9/3/2023)
               + Thêm API/ Router(9/3/2023)
               + Đổ dữ liệu Trang chủ(9/3/2023)
-              + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023)
+              + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023) 
+
+<br/>
+    <div align="center">
+        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="hi" />
+        <h3> View Hoàn tất Header </h3>
+    </div>
+<br/>
+
+
+              
               
 __________________________________________________________________________________________________
 10/3/2023
