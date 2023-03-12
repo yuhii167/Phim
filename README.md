@@ -10,17 +10,20 @@ Mình là: Nguyễn Đức Ngọc. Đây là dự án website xem phim b�
 #List to do:
 Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Django:
 
-+ Các tác vụ liên quan đến Users(6 điểm)
-+ Các tác vụ, phân loại Moive(6 điểm)
-+ Chức năng tìm kiếm(3 điểm)
-+ Tác tác vụ, phân loại Diễn Viên(3 điểm)
+Story User:
+
++ Các tác vụ liên quan đến Users(5 điểm)
++ Các tác vụ, phân loại Moive(10 điểm)
++ Chức năng tìm kiếm(4 điểm)
++ Tác tác vụ, phân loại Diễn Viên(4 điểm)
 + Temp thân thiện, phù hợp xu hướng(5 điểm)
 + Trang quản trị đơn giản dễ sử dụng(2 điểm)
 
+__________________________________________________________________________________________________
 
-Sprint thứ 1: 
+Sprint thứ 1( 8/3/2023 -> 14/3/2023): 
 
-
+Log Sprint:
               + Hoàn thành xong 1 nửa các tác vụ liên quan đến User(8/3/2023)
               + Tạo model cho Users( Sử dụng sqlLite)
               + Add Template (8/3/2023)
@@ -54,6 +57,10 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________
               
+
+              + CN nghỉ(12/03/2023)
+
+
               Tổng thời gian làm việc: 16 tiếng
               
 
