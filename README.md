@@ -50,7 +50,9 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 2  | Tạo dữ liệu mẫu cho Movies  | 0.5  |
 | 3  | Lập trình lấy dữ liệu  | 1 |
 | 4  | Thêm Sửa Xóa Movies  | 0.5  |
-| 5  | Test Movies  | 0.5  |
+| 5  | Add Template  | 0.5  |
+| 6  | Đổ dữ liệu  | 0.5  |
+| 7  | Test Movies  | 0.5  |
 
 #### 9/3/2023
 
@@ -65,16 +67,15 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 <br/>
     <div align="center">
-        <h3> View Layout </h3>
+        <h4> View Layout </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="" />
     </div>
-    ___
     <div align="center">
-        <h3> View Đăng nhập </h3>
+        <h4> View Đăng nhập </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
-        <h3> View đăng kí </h3>
+        <h4> View đăng kí </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
-        <h3> Đổ dữ liệu từ model vào Home </h3>
+        <h4> Đổ dữ liệu từ model vào Home </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_71.png" alt="hi" />
     </div>
 <br/>
@@ -92,16 +93,26 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 <br/>
     <div align="center">
-        <h3> View Logout </h3>
+        <h4> View Logout </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_72.png" alt="hi" />
     </div>
     <div align="center">
-        <h3>Đổ dữ liệu từ model vào Actor </h3>>
+        <h4>Đổ dữ liệu từ model vào Actor </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_73.png" alt="hi" />
     </div>
 <br/>
 
-____  
+#### Actor
+| TT  | Công việc | Thời gian thực hiện (giờ) | 
+| ------------- | ------------- | ------------- | 
+| 1  | Phân tích dữ liệu cho Actor  | 0.5  |
+| 2  | Tạo dữ liệu mẫu cho Actor | 0.5  |
+| 3  | Lập trình lấy dữ liệu  | 1 |
+| 4  | Thêm Sửa Xóa Actor  | 0.5  |
+| 5  | Add Template  | 0.5  |
+| 6  | Đổ dữ liệu  | 0.5  |
+| 7  | Test Movies  | 0.5  |
+
 #### 11/3/2023
 
               + Tạo View/Temp cho Phim(11/3/2023)
