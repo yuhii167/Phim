@@ -37,6 +37,7 @@ class Movie(models.Model):
                               default='RAW')
     views = models.PositiveIntegerField(default=0)
     time = models.CharField(max_length=100)
+    tags = TaggableManager(blank=True)
     
     trailer = models.CharField(max_length=400)
     category = models.ForeignKey(Category, on_delete=models.CASCADE,

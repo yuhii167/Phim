@@ -1,5 +1,4 @@
-from django.urls import path
-
+from django.urls import path, include
 from phim.views.account.register_view import UserRegisterView
 
 
@@ -9,6 +8,7 @@ from phim.views.film.actor_view import ActorListView
 from phim.views.film.movie_view import MovieListView
 from phim.views.film.movie_view import MovieListView1
 from phim.views.film.movie_view import MovieDetailView
+from phim.views.account.user_view import ProfileUserView
 
 app_name = "phim"
 
@@ -26,6 +26,9 @@ urlpatterns = [
         view=UserRegisterView.as_view(),
         name='register'
     ),
+
+    #API google
+    # path('accounts/', include('allauth.urls')),
 
     # account/logout/
     path(
@@ -61,12 +64,21 @@ urlpatterns = [
         name='movie'
     ),
 
-     path(
+    path(
         route='movie/<str:slug>/',
         view=MovieDetailView.as_view(),
         name='phimdetail'
 
     ),
+
+    #user
+    path(
+        route='user/profile',
+        view=ProfileUserView.as_view(),
+        name='user_profile'
+
+    )
+
 
     
 ]

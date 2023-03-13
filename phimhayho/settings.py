@@ -46,8 +46,47 @@ INSTALLED_APPS = [
     'phim',
     'rest_framework',
     'cloudinary',
-    'taggit'
+    'taggit',
+
+    #API google
+    # 'crispy_forms',
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.google',
 ]
+
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# #google API
+# AUTHENTICATION_BACKENDS = [    
+#     'django.contrib.auth.backends.ModelBackend',    
+#     'allauth.account.auth_backends.AuthenticationBackend',    
+#     'allauth.socialaccount.backends.google.GoogleOAuth2Backend',]
+
+
+#Setting socical
+# SITE_ID = 1
+# LOGIN_REDIRECT_URL = '/'
+# SOCIALACCOUNT_QUERY_EMAIL = True
+# SOCIALACCOUNT_PROVIDERS = {
+#     'google': {
+#         'APP': {
+#             'client_id': '301148861914-fib4o3f33qicn7d6ia5n06o0urtkomlp.apps.googleusercontent.com',
+#             'secret': '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',
+#             'key': ''
+#         },
+#         'SCOPE': [
+#             'profile',
+#             'email'
+#         ],
+#         'AUTH_PARAMS': {
+#             'access_type': 'online',
+#             'prompt': 'consent'
+#         }
+#     }
+# }
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

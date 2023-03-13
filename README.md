@@ -5,9 +5,9 @@
 </div>
 <br/>
 
-Mình là: Nguyễn Đức Ngọc. Đây là dự án website xem phim bằng Django 4.1.7 
+Dự án website xem phim bằng **Django** 4.1.7 
 
-#List to do:
+# List to do:
 Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Django:
 
 
@@ -20,43 +20,62 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 + Temp thân thiện, phù hợp xu hướng(5 điểm)
 + Trang quản trị đơn giản dễ sử dụng(2 điểm)
 
-__________________________________________________________________________________________________
 
-# Sprint thứ I ( 8/3/2023 -> 14/3/2023): 
 
-# Log Sprint
+## Sprint thứ I ( 8/3/2023 -> 14/3/2023): *Hoàn thành các tác vụ của User*
 
-__________________________________________________________________________________________________
-8/3/2023
+### Log Sprint
 
-              + Hoàn thành xong 1 nửa các tác vụ liên quan đến User(8/3/2023)
-              + Tạo model cho Users( Sử dụng sqlLite)
-              + Add Template (8/3/2023)
+#### User
 
-__________________________________________________________________________________________________
-9/3/2023
+| TT  | Công việc | Thời gian thực hiện (giờ) | 
+| ------------- | ------------- | ------------- | 
+| 1  | Phân tích dữ liệu cho User  | 0.5  |
+| 2  | Tạo dữ liệu mẫu cho User  | 0.5  |
+| 3  | Lập trình lấy dữ liệu  | 0.5  |
+| 4  | Thêm Sửa Xóa User  | 0.5  |
+| 5  | Test User  | 0.5  |
 
-              + Thay đổi chỉnh sửa Template, tạo Layout(9/3/2023)
-              + Add View Trang Chủ, Đăng Nhập/ Đăng kí(9/3/2023)
-              + POST Đăng nhập/ Đăng kí(9/3/2023)
-              + Tạo đường dẫn(9/3/2023)
-              + Tạo model,View cho Gategory(9/3/2023)
-              + Tạo model,View cho Movies(9/3/2023)
-              + Thêm API/ Router(9/3/2023)
-              + Đổ dữ liệu Trang chủ(9/3/2023)
-              + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023) 
+
+#### 8/3/2023
+
+              + Hoàn thành xong các tác vụ liên quan đến User
+              + Add Template
+
+#### Movie
+
+| TT  | Công việc | Thời gian thực hiện (giờ) | 
+| ------------- | ------------- | ------------- | 
+| 1  | Phân tích dữ liệu cho Movies  | 1  |
+| 2  | Tạo dữ liệu mẫu cho Movies  | 0.5  |
+| 3  | Lập trình lấy dữ liệu  | 1 |
+| 4  | Thêm Sửa Xóa Movies  | 0.5  |
+| 5  | Add Template  | 0.5  |
+| 6  | Đổ dữ liệu  | 0.5  |
+| 7  | Test Movies  | 0.5  |
+
+#### 9/3/2023
+
+              + Thay đổi chỉnh sửa Template, tạo Layout
+              + Add View Trang Chủ, Đăng Nhập/ Đăng kí
+              + Tạo đường dẫn
+              + Tạo model,View cho Gategory
+              + Tạo model,View cho Movies
+              + Thêm API
+              + Đổ dữ liệu Trang chủ
+              + Hoàn thành Đăng kí/ Đăng nhập
 
 <br/>
     <div align="center">
-        <h3> View Layout </h3>
+        <h4> View Layout </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="" />
     </div>
     <div align="center">
-        <h3> View Đăng nhập </h3>
+        <h4> View Đăng nhập </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
-        <h3> View đăng kí </h3>
+        <h4> View đăng kí </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
-        <h3> Đổ dữ liệu từ model vào Home </h3>
+        <h4> Đổ dữ liệu từ model vào Home </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_71.png" alt="hi" />
     </div>
 <br/>
@@ -65,8 +84,8 @@ ________________________________________________________________________________
 
               
               
-__________________________________________________________________________________________________
-10/3/2023
+
+#### 10/3/2023
 
               + Hoàn thành LogOut(10/3/2023)
               + Tạo model/View/Temp/Url cho Actor(10/3/2023)
@@ -74,17 +93,27 @@ ________________________________________________________________________________
 
 <br/>
     <div align="center">
-        <h3> View Logout </h3>
+        <h4> View Logout </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_72.png" alt="hi" />
     </div>
     <div align="center">
-        <h3>Đổ dữ liệu từ model vào Actor </h3>>
+        <h4>Đổ dữ liệu từ model vào Actor </h4>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_73.png" alt="hi" />
     </div>
 <br/>
 
-__________________________________________________________________________________________________     
-11/3/2023
+#### Actor
+| TT  | Công việc | Thời gian thực hiện (giờ) | 
+| ------------- | ------------- | ------------- | 
+| 1  | Phân tích dữ liệu cho Actor  | 0.5  |
+| 2  | Tạo dữ liệu mẫu cho Actor | 0.5  |
+| 3  | Lập trình lấy dữ liệu  | 1 |
+| 4  | Thêm Sửa Xóa Actor  | 0.5  |
+| 5  | Add Template  | 0.5  |
+| 6  | Đổ dữ liệu  | 0.5  |
+| 7  | Test Movies  | 0.5  |
+
+#### 11/3/2023
 
               + Tạo View/Temp cho Phim(11/3/2023)
               + Đổ dữ liệu cho Phim(11/3/2023)
@@ -98,13 +127,23 @@ ________________________________________________________________________________
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_74.png" alt="hi" />
     </div>
 <br/>
-__________________________________________________________________________________________________
-12/3/2023        
+____
+
+#### 11/3/2023
+        
 
               + CN nghỉ(12/03/2023)
 
 
-              Tổng thời gian làm việc: 16 tiếng
+#### Tông quan Sprint 1
+| TT  | Sprints | Thời gian(h)  | Sản phẩm  | 
+| ------------- | ------------- | ------------- | ------------- | 
+| 1  | Sprint thứ 1: Tác vụ User  | 3  | Đăng nhập, đăng kí, đăng xuất  |
+| 2  | Sprint thứ 2 | Hoàn thiện Home  | ... |
+| 3  | ...  | ... | ...  |
+| 4  | ...  | ...  | ... |
+
+
               
 
               

@@ -58,7 +58,7 @@
 							<a href="#page-top"></a>
 						</li>
 						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" href="{% url 'phim:home'%}" >
+							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:home'%}" >
 							Home <i aria-hidden="true"></i>
 							</a>
 							<!-- <ul class="dropdown-menu level1">
@@ -116,7 +116,7 @@
 						padding: 5px 25px;
 						-webkit-border-radius: 20px;
 						-moz-border-radius: 20px;
-						border-radius: 20px;"><a href="#">Profile</a></li>
+						border-radius: 20px;"><a href="{% url 'phim:user_profile' %}">Profile</a></li>
 
 						{% else %}
 						<li><a href="{% url 'phim:login' %}">LOG In</a></li>

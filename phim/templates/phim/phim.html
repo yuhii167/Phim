@@ -44,10 +44,10 @@
 				<div class="movie-item-style-2">
 					<img src="{{movie.flyer.url}}" alt="">
 					<div class="mv-item-infor">
-						<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title }} <span>{{ movie.DN }}</span></a></h6>
+						<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title }} <span> {{ movie.DN }}</span></a></h6>
 						<p class="rate"><i class="ion-android-star"></i><span>{{ movie.views }}</span> /10</p>
 						<p class="describe">{{ movie.description }}</p>
-						<p class="run-time"> Run Time: {{ movie.time }}   .     <span>MMPA: PG-13 </span>    .     <span>{{ movie.DN }}</span></p>
+						<p class="run-time"> Thời gian : {{ movie.time }}         <span>Lượt xem : {{movie.views}} </span>Quốc gia : {{ movie.contry }} <span>Thể loại : {{ movie.category }}</span></p>
 						<p>Stars:
                             {% for star in starts %} 
                                 <a href="#">{{ actor.name }}</a> 
