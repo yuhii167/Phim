@@ -26,35 +26,49 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 ### Log Sprint
 
-| TT  | Công việc | Thời gian thực hiện (giờ) |
+#### User
+
+| TT  | Công việc | Thời gian thực hiện (giờ) | 
 | ------------- | ------------- | ------------- | 
 | 1  | Phân tích dữ liệu cho User  | 0.5  |
 | 2  | Tạo dữ liệu mẫu cho User  | 0.5  |
 | 3  | Lập trình lấy dữ liệu  | 0.5  |
 | 4  | Thêm Sửa Xóa User  | 0.5  |
 | 5  | Test User  | 0.5  |
+
+
 #### 8/3/2023
 
-              + Hoàn thành xong 1 nửa các tác vụ liên quan đến User
+              + Hoàn thành xong các tác vụ liên quan đến User
               + Add Template
 
-____
+#### Movie
+
+| TT  | Công việc | Thời gian thực hiện (giờ) | 
+| ------------- | ------------- | ------------- | 
+| 1  | Phân tích dữ liệu cho Movies  | 1  |
+| 2  | Tạo dữ liệu mẫu cho Movies  | 0.5  |
+| 3  | Lập trình lấy dữ liệu  | 1 |
+| 4  | Thêm Sửa Xóa Movies  | 0.5  |
+| 5  | Test Movies  | 0.5  |
+
 #### 9/3/2023
 
-              + Thay đổi chỉnh sửa Template, tạo Layout(9/3/2023)
-              + Add View Trang Chủ, Đăng Nhập/ Đăng kí(9/3/2023)
-              + Tạo đường dẫn(9/3/2023)
-              + Tạo model,View cho Gategory(9/3/2023)
-              + Tạo model,View cho Movies(9/3/2023)
-              + Thêm API(9/3/2023)
-              + Đổ dữ liệu Trang chủ(9/3/2023)
-              + Hoàn thành Đăng kí/ Đăng nhập(9/3/2023) 
+              + Thay đổi chỉnh sửa Template, tạo Layout
+              + Add View Trang Chủ, Đăng Nhập/ Đăng kí
+              + Tạo đường dẫn
+              + Tạo model,View cho Gategory
+              + Tạo model,View cho Movies
+              + Thêm API
+              + Đổ dữ liệu Trang chủ
+              + Hoàn thành Đăng kí/ Đăng nhập
 
 <br/>
     <div align="center">
         <h3> View Layout </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="" />
     </div>
+    ___
     <div align="center">
         <h3> View Đăng nhập </h3>
         <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
@@ -69,7 +83,7 @@ ____
 
               
               
-____
+
 #### 10/3/2023
 
               + Hoàn thành LogOut(10/3/2023)
