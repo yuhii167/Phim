@@ -135,7 +135,15 @@ ____
               + CN nghỉ(12/03/2023)
 
 
-              Tổng thời gian làm việc: 16 tiếng
+#### Tông quan Sprint 1
+| TT  | Sprints | Thời gian(h)  | Sản phẩm  | 
+| ------------- | ------------- | ------------- | 
+| 1  | Sprint thứ 1: Tác vụ User  | 3  | Đăng nhập, đăng kí, đăng xuất  |
+| 2  | Sprint thứ 2 | Hoàn thiện Home  | ... |
+| 3  | ...  | ... | ...  |
+| 4  | ...  | ...  | ... |
+
+
               
 
               
