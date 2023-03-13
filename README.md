@@ -5,9 +5,9 @@
 </div>
 <br/>
 
-Mình là: Nguyễn Đức Ngọc. Đây là dự án website xem phim bằng Django 4.1.7 
+Dự án website xem phim bằng **Django** 4.1.7 
 
-#List to do:
+# List to do:
 Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Django:
 
 
@@ -20,19 +20,19 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 + Temp thân thiện, phù hợp xu hướng(5 điểm)
 + Trang quản trị đơn giản dễ sử dụng(2 điểm)
 
-__________________________________________________________________________________________________
+
 
 # Sprint thứ I ( 8/3/2023 -> 14/3/2023): Hoàn thành các tác vụ của User.
 
 ## Log Sprint
 
-__________________________________________________________________________________________________
+
 #### 8/3/2023
 
-              + Hoàn thành xong 1 nửa các tác vụ liên quan đến User(8/3/2023)
-              + Add Template (8/3/2023)
+              + Hoàn thành xong 1 nửa các tác vụ liên quan đến User
+              + Add Template
 
-__________________________________________________________________________________________________
+____
 #### 9/3/2023
 
               + Thay đổi chỉnh sửa Template, tạo Layout(9/3/2023)
