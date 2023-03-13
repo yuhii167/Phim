@@ -26,7 +26,13 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 ### Log Sprint
 
-
+| TT  | Công việc | Thời gian thực hiện (giờ) |
+| ------------- | ------------- |
+| 1  | Phân tích dữ liệu cho User  | 0.5  |
+| 2  | Tạo dữ liệu mẫu cho User  | 0.5  |
+| 3  | Lập trình lấy dữ liệu  | 0.5  |
+| 4  | Thêm Sửa Xóa User  | 0.5  |
+| 5  | Test User  | 0.5  |
 #### 8/3/2023
 
               + Hoàn thành xong 1 nửa các tác vụ liên quan đến User
