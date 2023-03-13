@@ -27,7 +27,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 ### Log Sprint
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- | 
 | 1  | Phân tích dữ liệu cho User  | 0.5  |
 | 2  | Tạo dữ liệu mẫu cho User  | 0.5  |
 | 3  | Lập trình lấy dữ liệu  | 0.5  |
