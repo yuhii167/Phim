@@ -8,7 +8,7 @@
 Dự án website xem phim bằng **Django** 4.1.7 
 
 # List to do:
-Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Django:
+Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Django.:
 
 
 # Story User:
