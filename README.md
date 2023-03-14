@@ -44,15 +44,15 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 #### Movie
 
-| TT  | Công việc | Thời gian thực hiện (giờ) | 
-| ------------- | ------------- | ------------- | 
-| 1  | Phân tích dữ liệu cho Movies  | 1  |
-| 2  | Tạo dữ liệu mẫu cho Movies  | 0.5  |
-| 3  | Lập trình lấy dữ liệu  | 1 |
-| 4  | Thêm Sửa Xóa Movies  | 0.5  |
-| 5  | Add Template  | 0.5  |
-| 6  | Đổ dữ liệu  | 0.5  |
-| 7  | Test Movies  | 0.5  |
+| TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+| 1  | Phân tích dữ liệu cho Movies  | 1  | | x | 
+| 2  | Tạo dữ liệu mẫu cho Movies  | 0.5  | | x |
+| 3  | Lập trình lấy dữ liệu  | 1 | x | |
+| 4  | Thêm Sửa Xóa Movies  | 0.5  | x |  |
+| 5  | Add Template  | 0.5  | x |  |
+| 6  | Đổ dữ liệu  | 0.5  | x |  |
+| 7  | Test Movies  | 0.5  | | x |
 
 #### 9/3/2023
 
