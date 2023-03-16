@@ -46,7 +46,7 @@ class Movie(models.Model):
     date_published = models.DateTimeField(null=True, blank=True,
                                           default=timezone.now)
     DN = models.CharField(max_length=4)
-    flyer=CloudinaryField('img')
+    flyer=CloudinaryField('img', transformation=[{'width': 400, 'height': 600, 'crop': 'fill'}])
     stars = models.ManyToManyField(Actor, related_name='movies')
     tags = TaggableManager(blank=True)
 
