@@ -28,6 +28,7 @@ class Movie(models.Model):
     )
 
     title:str=models.CharField(max_length=225)
+    rating = models.CharField(max_length=10)
     description:str=models.TextField()
     created =models.DateTimeField(auto_now_add=True)
     uuid=models.UUIDField(default=uuid.uuid4,unique=True)
@@ -40,12 +41,12 @@ class Movie(models.Model):
     tags = TaggableManager(blank=True)
     
     trailer = models.CharField(max_length=400)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,
+    category = models.ManyToManyField(Category,
                                  related_name='movies')
     movies = models.CharField(max_length=500)
     date_published = models.DateTimeField(null=True, blank=True,
                                           default=timezone.now)
-    DN = models.CharField(max_length=4)
+    year = models.CharField(max_length=4)
     flyer=CloudinaryField('img', transformation=[{'width': 400, 'height': 600, 'crop': 'fill'}])
     stars = models.ManyToManyField(Actor, related_name='movies')
     tags = TaggableManager(blank=True)

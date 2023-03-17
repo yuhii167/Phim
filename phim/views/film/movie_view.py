@@ -29,12 +29,12 @@ class MovieListView1(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['movies'] = Movie.objects.all()
         return context
     
 class MovieDetailView(DetailView):
     model = Movie
     template_name = 'phim/phimdetail.html'
+    
 
     def get_context_data(self, **kwargs):
         session_key = f"viewed_movie {self.object.slug}"
@@ -45,4 +45,5 @@ class MovieDetailView(DetailView):
         kwargs['movie'] = self.get_object
 
         return super().get_context_data(**kwargs)
+    
     

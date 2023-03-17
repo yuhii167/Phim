@@ -1,0 +1,9 @@
+<h1>Cập nhật phim</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="imdb_url">Đường dẫn IMDb:</label>
+      <input type="text" class="form-control" id="imdb_url" name="imdb_url" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+  </form>
