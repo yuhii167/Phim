@@ -15,21 +15,27 @@ def update_movie(request):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         title = soup.select_one('h1').text
+        title_el = soup.select_one('h2').text
+        rating = soup.select_one('.featured-attr:contains("IMDB") .text').text
+        contry = soup.select_one('.featured-attr:contains("Quốc gia") .text').text
+        year = soup.select_one('.featured-attr:contains("Năm phát hành") .text').text
+        time = soup.select_one('.featured-attr:contains("Thời lượng") .text').text
+        flyer = soup.select_one('div', class_='media media-cover mb-2')
 
         movie = Movie()
         movie.title = title
+        movie.title_el = title_el
+        movie.rating = rating
+        movie.contry = contry
+        movie.year = year
+        movie.time = time
+        movie.flyer = flyer
+        
         print(movie.title)
+        print(movie.rating)
 
             # Lấy thể loại phim
-        categories = []
-        category_tags = soup.find_all('a', {' .content_detail content_min fl'})
-        for tag in category_tags:
-            categories.append(tag.text.strip())
-
-            # Tạo thể loại mới nếu chưa tồn tại
-        for category_name in categories:
-            category, _ = Category.objects.get_or_create(name=category_name)
-            movie.category.add(category)
+        
 
         movie.save()
 

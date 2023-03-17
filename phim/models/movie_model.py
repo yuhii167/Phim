@@ -28,6 +28,7 @@ class Movie(models.Model):
     )
 
     title:str=models.CharField(max_length=225)
+    title_el =models.CharField(max_length=250)
     rating = models.CharField(max_length=10)
     description:str=models.TextField()
     created =models.DateTimeField(auto_now_add=True)

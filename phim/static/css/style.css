@@ -4031,6 +4031,14 @@ ul {
   text-transform: none;
   margin-bottom: 25px;
 }
+.bd-hd-01 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  color: #ebe6e6;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 25px;
+}
 .bd-hd span {
   font-family: 'Dosis', sans-serif;
   font-size: 24px;
