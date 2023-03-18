@@ -49,6 +49,8 @@ def update_movie1(request):
             a_text = tag.text.strip()
             tag_list.append(a_text)
 
+        category = Category.objects.get(id=2)
+        movie.category.set([category])
         movie.tags.set(tag_list)
         movie.save()
 
