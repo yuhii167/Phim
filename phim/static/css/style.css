@@ -4031,6 +4031,14 @@ ul {
   text-transform: none;
   margin-bottom: 25px;
 }
+.bd-hd-01 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  color: #ebe6e6;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 25px;
+}
 .bd-hd span {
   font-family: 'Dosis', sans-serif;
   font-size: 24px;
@@ -5671,14 +5679,15 @@ ul {
 }
 .common-hero {
   height: 385px;
-  background: url('../images/uploads/user-hero-bg.jpg') no-repeat;
+  background: url('../images/uploads/footer-bg.jpg') no-repeat;
 }
 .common-hero:before {
-  background-color: rgba(0, 0, 0, 0.4);
+  background: url('../images/uploads/slider-bg.jpg') no-repeat;
+  background-color: #06121e;
 }
 .user-hero {
   height: 385px;
-  background: url('../images/uploads/user-hero-bg.jpg') no-repeat;
+  background: url('../images/uploads/slider-bg.jpg') no-repeat;
 }
 .user-hero .hero-ct {
   padding-top: 225px;
@@ -7045,7 +7054,7 @@ p.ceb-single {
   background-color: #00b9ef;
 }
 .slider {
-  background: url('../images/uploads/slider-bg.jpg') no-repeat;
+  background-color: #06121e;
   background-position: center;
   text-align: center;
   background-size: cover;
@@ -7108,12 +7117,11 @@ p.ceb-single {
 .slider .social-link a i:hover {
   color: #dcf836;
 }
-@media (max-width: 767px) {
+@media (max-width: 1120px) {
   .slider {
     padding-bottom: 0;
   }
   .slider .slick-multiItemSlider {
-    max-width: 300px;
     padding-top: 60;
   }
   .slider .slick-multiItemSlider .movie-item {
@@ -7121,6 +7129,7 @@ p.ceb-single {
   }
 }
 .slider .slick-multiItemSlider {
+
   padding-bottom: 30px;
 }
 .slider .slick-multiItemSlider .slick-list {
@@ -7130,7 +7139,7 @@ p.ceb-single {
   text-align: right;
 }
 .sliderv2 {
-  background: url('../images/uploads/slider-bg2.jpg') no-repeat;
+  background: url('../images/uploads/footer-bg.jpg') no-repeat;
   padding-bottom: 0;
   padding-top: 180px;
   overflow: hidden;
@@ -8138,7 +8147,7 @@ header#headerv3-light {
   }
 }
 footer {
-  background: url('../images/uploads/ft-bg.jpg') no-repeat;
+  background: url('../images/uploads/footer-bg.jpg') no-repeat;
   background-position: center;
   background-size: cover;
 }

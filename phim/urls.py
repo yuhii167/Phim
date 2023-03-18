@@ -9,7 +9,7 @@ from phim.views.film.movie_view import MovieListView
 from phim.views.film.movie_view import MovieListView1
 from phim.views.film.movie_view import MovieDetailView
 from phim.views.account.user_view import ProfileUserView
-
+from phim.views.film.get_api_model_movie import update_movie
 app_name = "phim"
 
 urlpatterns = [ 
@@ -26,7 +26,7 @@ urlpatterns = [
         view=UserRegisterView.as_view(),
         name='register'
     ),
-
+    path("update_movie/", update_movie, name="update_movie"),
     #API google
     # path('accounts/', include('allauth.urls')),
 

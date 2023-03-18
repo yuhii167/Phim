@@ -17,15 +17,8 @@ admin.site.register(Ads)
 
 admin.site.register(Actor)
 
-#Dang ki Gategory Admin
-class CategoryAdmin(admin.ModelAdmin):
 
-    list_display = ('name', 'slug', 'image', 'approved')
-    list_filter = ('name', 'approved',)
-    search_fields = ('name',)
-    prepopulated_fields = {'slug': ('name',)}
-    ordering = ['name', ]
 
 
 # Registers the category model at the admin backend.
-admin.site.register(Category, CategoryAdmin)
+admin.site.register(Category)
