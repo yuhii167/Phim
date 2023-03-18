@@ -27,10 +27,10 @@ def update_movie(request):
         tags = soup.find("div", {"class": "categories"})
         tag = tags.find_all("a")
         
-        
         movie = Movie()
         movie.title = title
         movie.description = description
+        
         movie.title_el = title_el
         movie.rating = rating
         movie.contry = contry
@@ -44,6 +44,8 @@ def update_movie(request):
             a_text = tag.text.strip()
             tag_list.append(a_text)
 
+        category = Category.objects.get(id=3)
+        movie.category.set([category])
         movie.tags.set(tag_list)
         movie.save()
 
