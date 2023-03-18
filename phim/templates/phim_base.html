@@ -69,19 +69,19 @@
 						</li>
 						<li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1"  data-hover="dropdown">
-							Xem phim<i class="fa fa-angle-down" aria-hidden="true"></i>
+							Khám phá<i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
 								<li class="dropdown">
-									<a class="dropdown-toggle" href="{% url 'phim:movie' %}"  >xem phim<i class="ion-ios-arrow-forward"></i></a>
+									<a class="dropdown-toggle" href="{% url 'phim:movie' %}"  >Xem phim<i class="ion-ios-arrow-forward"></i></a>
 									<ul class="dropdown-menu level2">
 										<li><a href="moviegrid.html">phim hot</a></li>
 										<li><a href="moviegridfw.html">phim news</a></li>
 									</ul>
 								</li>			
-								<li><a href="{% url 'phim:movie' %}">Danh sách phim</a></li>
-								<li><a href="moviesingle.html">Phim lẻ</a></li>
-								<li class="it-last"><a href="seriessingle.html">Phim bộ</a></li>
+								<li><a href="{% url 'phim:movie' %}">Thể loại</a></li>
+								<li><a href="moviesingle.html">Bộ sưu tập</a></li>
+	
 							</ul>
 						</li>
 						<li class="dropdown first">
@@ -108,7 +108,7 @@
 				
 					</ul>
 					<ul class="nav navbar-nav flex-child-menu menu-right">
-						<li class="dropdown first">
+						<!-- <li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
 							pages <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
@@ -118,7 +118,7 @@
 								<li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
 							</ul>
 						</li>                
-						<li><a href="#">Help</a></li>
+						<li><a href="#">Help</a></li> -->
 						{% if request.user.is_authenticated %}
 						<li><a href="{% url 'phim:logout' %}">Đăng xuất</a></li>
 						<li style="    background-color: #dd003f;
