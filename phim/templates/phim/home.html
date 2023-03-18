@@ -33,11 +33,13 @@
 	    					<span class="blue" >
 								<a href="#" tabindex="-1">{{ movie.status}}</a>
 							</span>
+	    				</div>
+						<div class ="cate">
 							<span class="green">
 								<a href="#" tabindex="-1">View: {{ movie.views}}</a>
 							</span>
-	    				</div>
-	    				<h7><a href="{{ movie.get_absolute_url }}">{{ movie.title}}</a></h6>
+						</div>
+	    				<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title}}</a></h6>
 	    				<p><i class="ion-android-star"></i><span>{{ movie.rating}}</span> /10</p>
 	    			</div>
 				
