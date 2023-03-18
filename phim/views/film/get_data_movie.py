@@ -7,7 +7,7 @@ from phim.models.category_model import Category
 import cloudinary
 import cloudinary.uploader
 
-def update_movie(request):
+def update_movie1(request):
     if request.method == 'POST':
         imdb_url = request.POST.get('imdb_url')
 
@@ -22,8 +22,11 @@ def update_movie(request):
         contry = soup.select_one('.featured-attr:contains("Quốc gia") .text').text
         year = soup.select_one('.featured-attr:contains("Năm phát hành") .text').text
         time = soup.select_one('.featured-attr:contains("Thời lượng") .text').text
-        images = soup.select_one('.col-md-3 > .media.media-cover')['data-src']
+        images = soup.select_one('.media.media-cover')['style']
+        images = soup.select_one('.media-cover')['style'].split('url(')[1].split(')')[0]
         image_url = cloudinary.uploader.upload(images)
+
+
         tags = soup.find("div", {"class": "categories"})
         tag = tags.find_all("a")
         
@@ -34,8 +37,10 @@ def update_movie(request):
         movie.title_el = title_el
         movie.rating = rating
         movie.contry = contry
+        movie.flyer = image_url['secure_url']
         movie.year = year
         movie.time = time
+        
         movie.save()
 
         movie.flyer = image_url['secure_url']
@@ -49,5 +54,5 @@ def update_movie(request):
 
         messages.success(request, 'Cập nhật phim thành công.')
 
-    return render(request, 'phim/update_movie.html')
+    return render(request, 'phim/update_movie1.html')
 
