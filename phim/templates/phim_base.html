@@ -28,7 +28,7 @@
 <body>
 <!--preloading-->
 <div id="preloader">
-    <a href="{% url 'phim:home'%}" class="logo" src="{% static 'images/logo_website.png' %}"  width="119" height="58">
+    <a class="logo" src="{% static 'images/logo_website.png' %}"  width="119" height="58">
     <div id="status">
         <span></span>
         <span></span>
@@ -59,7 +59,7 @@
 						</li>
 						<li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:home'%}" >
-							Home <i aria-hidden="true"></i>
+							Trang chủ <i aria-hidden="true"></i>
 							</a>
 							<!-- <ul class="dropdown-menu level1">
 								<li><a href="#">1</a></li>
@@ -68,12 +68,12 @@
 							</ul> -->
 						</li>
 						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							movies<i class="fa fa-angle-down" aria-hidden="true"></i>
+							<a class="btn btn-default dropdown-toggle lv1"  data-hover="dropdown">
+							Xem phim<i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" href="{% url 'phim:movie' %}" data-toggle="dropdown" >xem phim<i class="ion-ios-arrow-forward"></i></a>
+									<a class="dropdown-toggle" href="{% url 'phim:movie' %}"  >xem phim<i class="ion-ios-arrow-forward"></i></a>
 									<ul class="dropdown-menu level2">
 										<li><a href="moviegrid.html">phim hot</a></li>
 										<li><a href="moviegridfw.html">phim news</a></li>
@@ -86,14 +86,24 @@
 						</li>
 						<li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:actor' %}">
-							Diễn viên <i  aria-hidden="true"></i>
+							Phim lẻ <i  aria-hidden="true"></i>
 							</a>
 						</li>
 						<li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							news <i  aria-hidden="true"></i>
+							Phim bộ <i  aria-hidden="true"></i>
 							</a>
 							
+						</li>
+						<li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:actor' %}">
+							Phim hot <i  aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:actor' %}">
+							Diễn viên <i  aria-hidden="true"></i>
+							</a>
 						</li>
 				
 					</ul>

@@ -36,7 +36,7 @@ class Movie(models.Model):
     contry = models.CharField(max_length=100)
     slug = models.SlugField()
     status = models.CharField(max_length=10, choices=STATUS_CHOICES,
-                              default='RAW')
+                              default='FULLHD')
     views = models.PositiveIntegerField(default=0)
     time = models.CharField(max_length=100)
  

@@ -30,10 +30,15 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="blue"><a href="#">{{ movie.status}}</a></span>
+	    					<span class="blue" >
+								<a href="#" tabindex="-1">{{ movie.status}}</a>
+							</span>
+							<span class="green">
+								<a href="#" tabindex="-1">View: {{ movie.views}}</a>
+							</span>
 	    				</div>
-	    				<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title}}</a></h6>
-	    				<p><i class="ion-android-star"></i><span>{{ movie.views}}</span> /10</p>
+	    				<h7><a href="{{ movie.get_absolute_url }}">{{ movie.title}}</a></h6>
+	    				<p><i class="ion-android-star"></i><span>{{ movie.rating}}</span> /10</p>
 	    			</div>
 				
 	    		</div>
@@ -75,7 +80,7 @@
 					            			</div>
 					            			<div class="title-in">
 					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
-					            				<p><i class="ion-android-star"></i><span>{{movie.views}}</span> /10</p>
+					            				<p><i class="ion-android-star"></i><span>{{movie.rating}}</span> /10</p>
 					            			</div>
 					            		</div>
 				            		</div>

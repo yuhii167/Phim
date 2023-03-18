@@ -22,13 +22,12 @@ def update_movie(request):
         contry = soup.select_one('.featured-attr:contains("Quốc gia") .text').text
         year = soup.select_one('.featured-attr:contains("Năm phát hành") .text').text
         time = soup.select_one('.featured-attr:contains("Thời lượng") .text').text
-        # images = soup.select_one('.col-md-3 > .media.media-cover')['data-src']
-        # image_url = cloudinary.uploader.upload(images)
+        images = soup.select_one('.col-md-3 > .media.media-cover')['data-src']
+        image_url = cloudinary.uploader.upload(images)
         tags = soup.find("div", {"class": "categories"})
         tag = tags.find_all("a")
         
         
-
         movie = Movie()
         movie.title = title
         movie.description = description
@@ -39,7 +38,7 @@ def update_movie(request):
         movie.time = time
         movie.save()
 
-        # movie.flyer = image_url['secure_url']
+        movie.flyer = image_url['secure_url']
         tag_list = []
         for tag in soup.select('div.categories a'):
             a_text = tag.text.strip()
