@@ -39,8 +39,10 @@
 								<a href="#" tabindex="-1">View: {{ movie.views}}</a>
 							</span>
 						</div>
-	    				<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title}}</a></h6>
-	    				<p><i class="ion-android-star"></i><span>{{ movie.rating}}</span> /10</p>
+					
+						<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title| slice:":20"| slice:":20"}}</a></h6>
+						<p><i class="ion-android-star"></i><span>{{ movie.rating}}</span> /10</p>
+
 	    			</div>
 				
 	    		</div>
@@ -81,7 +83,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>{{movie.rating}}</span> /10</p>
 					            			</div>
 					            		</div>
@@ -104,7 +106,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -126,7 +128,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -148,7 +150,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -184,7 +186,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -207,7 +209,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -229,7 +231,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -251,7 +253,7 @@
 					            				<a  href="{{ movie.get_absolute_url }}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 					            			</div>
 					            			<div class="title-in">
-					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title}}</a></h6>
+					            				<h6><a href="{{ movie.get_absolute_url }}">{{movie.title| slice:":20"}}</a></h6>
 					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 					            			</div>
 					            		</div>
@@ -302,7 +304,7 @@
 								<img src="{{ movie.flyer.url }}"  alt="photo by Barn Images" width="4096" height="2737">
 							</div>
 							<div class="trailer-infor">
-	                        	<h4 class="desc">{{movie.title}}</h4>
+	                        	<h4 class="desc">{{movie.title| slice:":20"}}</h4>
 	                        	<!-- <p>2:30</p> -->
 	                        </div>
 						</div>
