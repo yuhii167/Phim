@@ -19,21 +19,22 @@
 	<meta name="format-detection" content="telephone-no">
 
 	<!-- CSS files -->
-    {% block stylesheet %}
+
 	<link rel="stylesheet" href="{% static 'css/plugins.css' %}">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css?v=1">
-    {% endblock stylesheet %}
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+   
 
 </head>
 <body>
 <!--preloading-->
 <div id="preloader">
-    <a class="logo" src="{% static 'images/logo_website.png' %}"  width="119" height="58">
+    <a class="logo" src="{% static 'images/logo_home2.png' %}"  width="119" height="58">
     <div id="status">
         <span></span>
         <span></span>
     </div>
 </div>
+
 <!--end of preloading-->
 <!-- BEGIN | Header -->
 
@@ -49,7 +50,7 @@
 							<span></span>
 						</div>
 				    </div>
-				    <a href="{% url 'phim:home'%}"><img class="logo" src="{% static 'images/logo_home.png' %}"  width="90" height="45"></a>
+				    <a href="{% url 'phim:home'%}"><img class="logo" src="{% static 'images/logo_home2.png' %}"  width="90" height="45"></a>
 			    </div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -163,7 +164,7 @@
 	<div class="container">
 		<div class="flex-parent-ft">
 			<div class="flex-child-ft item1">
-				 <a href="index-2.html"><img class="logo" src="images/logo1.png" alt=""></a>
+				 <a href="{% url 'phim:home'%}"><img class="logo" src="images/logo_home2.png" alt=""></a>
 				 <p>5th Avenue st, manhattan<br>
 				New York, NY 10001</p>
 				<p>Call us: <a href="#">(+01) 202 342 6789</a></p>
@@ -220,7 +221,7 @@
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/plugins.js' %}"></script>
 <script src="{% static 'js/plugins2.js' %}"></script>
-<script src="{%static 'js/custom.js' %}"></script>
+<script src="{% static 'js/custom1.js' %}"></script>
 </body>
 
 
