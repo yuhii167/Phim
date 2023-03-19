@@ -9,26 +9,18 @@
 
 {% block content %}
 
+
 <div class="slider movie-items">
 	<div class="container">
-		{% if movies %}
 		<div class="row">
-			<div class="social-link">
-				<p>Follow us: </p>
-				<a href="#"><i class="ion-social-facebook"></i></a>
-				<a href="#"><i class="ion-social-twitter"></i></a>
-				<a href="#"><i class="ion-social-googleplus"></i></a>
-				<a href="#"><i class="ion-social-youtube"></i></a>
-			</div>
 	    	<div  class="slick-multiItemSlider">
-			
-				{% for movie in movies %}
+	    		{% for movie in movies %}
 	    		<div class="movie-item">
 					
 	    			<div class="mv-img">
 	    				<a href="#"><img src="{{ movie.flyer.url}}" alt=""> </a>
-	    			</div>
-	    			<div class="title-in">
+	    			</div> 
+	    			<div class="title-in" style="text-align: center ;">
 	    				<div class="cate">
 	    					<span class="blue" >
 								<a href="#" tabindex="-1">{{ movie.status}}</a>
@@ -38,8 +30,8 @@
 							<span class="green">
 								<a href="#" tabindex="-1">View: {{ movie.views}}</a>
 							</span>
-						</div>
-					
+
+						</div>		
 						<h6><a href="{{ movie.get_absolute_url }}">{{ movie.title| slice:":20"| slice:":20"}}</a></h6>
 						<p><i class="ion-android-star"></i><span>{{ movie.rating}}</span> /10</p>
 
@@ -47,12 +39,9 @@
 				
 	    		</div>
 				{% endfor %}
-			{% else %}
-				<center>
-					<h1>NOTHING</h1>
-				</center>
-			{% endif %}
-
+	    	</div>
+	    </div>
+	</div>
 </div>
 <div class="movie-items">
 	<div class="container">

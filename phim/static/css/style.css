@@ -5672,14 +5672,14 @@ ul {
 }
 .common-hero {
   height: 385px;
-  background: url('../images/uploads/user-hero-bg.jpg') no-repeat;
+  background: url('../images/uploads/slider-bg.jpg') no-repeat;
 }
 .common-hero:before {
-  background-color: rgba(0, 0, 0, 0.4);
+  background: url('../images/uploads/slider-bg.jpg') no-repeat;
 }
 .user-hero {
   height: 385px;
-  background: url('../images/uploads/user-hero-bg.jpg') no-repeat;
+  background: url('../images/uploads/slider-bg.jpg') no-repeat;
 }
 .user-hero .hero-ct {
   padding-top: 225px;
