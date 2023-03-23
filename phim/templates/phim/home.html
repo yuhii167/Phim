@@ -54,7 +54,7 @@
 					<a href="{% url 'phim:film' %}" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
 				</div>
 				<div class="flex-wrap-movielist mv-grid-fw">
-					{% for movie in movies %}
+					{% for movie in le_movies %}
 						<div class="movie-item-style-2 movie-item-style-1">
 							<img src="{{movie.flyer.url}}" alt="">
 							<div class="hvr-inner">
@@ -73,7 +73,7 @@
 					<a href="{% url 'phim:series' %}" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
 				</div>
 				<div class="flex-wrap-movielist mv-grid-fw">
-					{% for movie in movies %}
+					{% for movie in bo_movies %}
 						<div class="movie-item-style-2 movie-item-style-1">
 							<img src="{{movie.flyer.url}}" alt="">
 							<div class="hvr-inner">

@@ -11,17 +11,18 @@ from phim.models.actor import Actor
 
 #View phim trang chủ
 class MovieListView(ListView):
-    context_object_name = "movies"
-    paginate_by = 6
+    model = Movie
     template_name = 'phim/home.html'
-
-    def get_queryset(self):
-        return Movie.objects.all()
+    context_object_name = 'movies'
+    paginate_by = 6
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['adss'] = Ads.objects.all()
+       
+        context['le_movies'] = Movie.objects.filter(category='2')
+        context['bo_movies'] = Movie.objects.filter(category='3')
         return context
+
 
 #View Phim trang Phim
 class MovieListView1(ListView):

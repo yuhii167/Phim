@@ -5,7 +5,7 @@
 <head>
 	<!-- Basic need -->
 	<title>Xem Hay Ho |{% block title %} {% endblock title %}</title>
-	<link rel="icon" href="{% static 'images/logo_home.png' %}">
+	<link rel="icon" href="{% static 'images/logo_home3.png' %}">
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="XemHayHo">
@@ -157,11 +157,11 @@
 {% endblock content %}
 
 <!-- footer section-->
-<footer class="ht-footer">
+<footer class="ht-footer" >
 	<div class="container">
 		<div class="flex-parent-ft">
 			<div class="flex-child-ft item1">
-				 <a href="{% url 'phim:home'%}"><img class="logo" src="images/logo_home2.png" alt=""></a>
+				 <a href="{% url 'phim:home'%}"><img class="logo" src="{% static 'images/logo_home3.png' %}" alt=""></a>
 				 <p>5th Avenue st, manhattan<br>
 				New York, NY 10001</p>
 				<p>Call us: <a href="#">(+01) 202 342 6789</a></p>
