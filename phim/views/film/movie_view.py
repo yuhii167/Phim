@@ -11,17 +11,18 @@ from phim.models.actor import Actor
 
 #View phim trang chủ
 class MovieListView(ListView):
-    context_object_name = "movies"
-    paginate_by = 6
+    model = Movie
     template_name = 'phim/home.html'
-
-    def get_queryset(self):
-        return Movie.objects.all()
+    context_object_name = 'movies'
+    paginate_by = 6
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['adss'] = Ads.objects.all()
+       
+        context['le_movies'] = Movie.objects.filter(category='2')
+        context['bo_movies'] = Movie.objects.filter(category='3')
         return context
+
 
 #View Phim trang Phim
 class MovieListView1(ListView):
@@ -31,6 +32,7 @@ class MovieListView1(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['phim_count'] = context['movies'].count()
         return context
 
 #Chi tiết
@@ -52,21 +54,27 @@ class MovieDetailView(DetailView):
 #Phim bộ
 class PhimBoListView(ListView):
     context_object_name = "movies"
-    queryset = Movie.objects.filter(category='3')
+    model = Movie
     template_name = 'phim/phim_bo.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        context['movies'] = Movie.objects.filter(category='3')
+        context['bo_count'] = context['movies'].count()
         return context
     
 #Phim lẻ
 class PhimLeListView(ListView):
+    model = Movie
     context_object_name = "movies"
-    queryset = Movie.objects.filter(category='2')
     template_name = 'phim/phim_le.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+       
+        context['movies'] = Movie.objects.filter(category='2')
+        context['le_count'] = context['movies'].count()
         return context
     
     

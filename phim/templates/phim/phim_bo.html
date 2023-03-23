@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="topbar-filter fw">
-					<p>Found <span>1,608 movies</span> in total</p>
+					<p>Found: <span>{{bo_count}}</span> in total</p>
 					<label>Sort by:</label>
 					<select>
 						<option value="popularity">Popularity Descending</option>
@@ -46,7 +46,7 @@
 	            				<a  href="{{ movie.get_absolute_url }}"> Xem phim <i class="ion-android-arrow-dropright"></i> </a>
 	            			</div>
 							<div class="mv-item-infor">
-								<h6><a href="#">{{movie.title}}</a></h6>
+								<h6><a href="#">{{movie.title| slice:":25"}}</a></h6>
 								<p class="rate"><i class="ion-android-star"></i><span>{{ movie.rating }}</span> </p>
 							</div>
 						</div>	

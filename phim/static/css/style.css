@@ -4032,7 +4032,7 @@ ul {
   text-transform: none;
   margin-bottom: 25px;
 }
-.bd-hd01 {
+.bd-hd-01 {
   font-family: 'Dosis', sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -5666,7 +5666,7 @@ ul {
 }
 /*movie single hero*/
 .mv-single-hero {
-  background: url('../images/uploads/hero-bg.jpg') no-repeat;
+  background-color: rgba(0, 0, 0, 0.75);
   height: 598px;
 }
 /*series single hero*/
@@ -8147,7 +8147,7 @@ header#headerv3-light {
   }
 }
 footer {
-  background: url('../images/uploads/ft-bg.jpg') no-repeat;
+  background: url('../images/uploads/footer-bg1.jpg') no-repeat;
   background-position: center;
   background-size: cover;
 }
