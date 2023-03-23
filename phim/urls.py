@@ -7,6 +7,8 @@ from phim.views.account.login_view import UserLoginView
 from phim.views.film.actor_view import ActorListView
 from phim.views.film.movie_view import MovieListView
 from phim.views.film.movie_view import MovieListView1
+from phim.views.film.movie_view import PhimBoListView
+from phim.views.film.movie_view import PhimLeListView
 from phim.views.film.movie_view import MovieDetailView
 from phim.views.account.user_view import ProfileUserView
 from phim.views.film.get_api_model_movie import update_movie
@@ -67,6 +69,20 @@ urlpatterns = [
     ),
 
     path(
+        route='movie/series',
+        view=PhimBoListView.as_view(),
+        name='series'
+
+    ), 
+
+    path(
+        route='movie/film',
+        view=PhimLeListView.as_view(),
+        name='film'
+
+    ), 
+
+    path(
         route='movie/<str:slug>/',
         view=MovieDetailView.as_view(),
         name='phimdetail'
@@ -79,7 +95,7 @@ urlpatterns = [
         view=ProfileUserView.as_view(),
         name='user_profile'
 
-    )
+    ),
 
 
     

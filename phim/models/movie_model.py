@@ -4,6 +4,7 @@ from django.urls import reverse
 from phim.models.category_model import Category
 from django.utils.text import slugify
 from django.utils import timezone
+from django.db.models import Q
 
 
 from phim.models.actor import Actor
@@ -68,3 +69,30 @@ class Movie(models.Model):
         return reverse('phim:phimdetail',
                        kwargs={'slug': self.slug})
     
+
+
+
+class MovieSearch:
+    @staticmethod
+    def search_movies(filters):
+        query = filters.get('query', None)
+        category = filters.get('category', None)
+        country = filters.get('country', None)
+        year = filters.get('year', None)
+
+        qs = Movie.objects.all()
+
+        if query:
+            query_lookups = (Q(title__icontains=query) | Q(description__icontains=query) | Q(category__name__icontains=query))
+            qs = qs.filter(query_lookups).distinct()
+
+        if category:
+            qs = qs.filter(category__name__icontains=category)
+
+        if country:
+            qs = qs.filter(country__icontains=country)
+
+        if year:
+            qs = qs.filter(year__icontains=year)
+
+        return qs
