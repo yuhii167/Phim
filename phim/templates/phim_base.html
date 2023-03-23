@@ -21,7 +21,7 @@
 	<!-- CSS files -->
 
 	<link rel="stylesheet" href="{% static 'css/plugins.css' %}">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
    
 
 </head>
@@ -74,11 +74,8 @@
 							</a>
 							<ul class="dropdown-menu level1">
 								<li class="dropdown">
-									<a class="dropdown-toggle" href="{% url 'phim:movie' %}"  >Xem phim<i class="ion-ios-arrow-forward"></i></a>
-									<ul class="dropdown-menu level2">
-										<li><a href="moviegrid.html">phim hot</a></li>
-										<li><a href="moviegridfw.html">phim news</a></li>
-									</ul>
+									<a class="dropdown-toggle" href="{% url 'phim:movie' %}"  >Xem phim<i ></i></a>
+									
 								</li>			
 								<li><a href="{% url 'phim:movie' %}">Thể loại</a></li>
 								<li><a href="moviesingle.html">Bộ sưu tập</a></li>
@@ -86,12 +83,12 @@
 							</ul>
 						</li>
 						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:actor' %}">
+							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:film' %}">
 							Phim lẻ <i  aria-hidden="true"></i>
 							</a>
 						</li>
 						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+							<a class="btn btn-default dropdown-toggle lv1" href="{% url 'phim:series' %}" >
 							Phim bộ <i  aria-hidden="true"></i>
 							</a>
 							
@@ -146,8 +143,8 @@
 	    <!-- top search form -->
 	    <div class="top-search">
 	    	<select>
-				<option value="united">TV show</option>
-				<option value="saab">Others</option>
+				<option value="united">Phim lẻ</option>
+				<option value="saab">Phim bộ</option>
 			</select>
 			<input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
 	    </div>
