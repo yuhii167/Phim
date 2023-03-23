@@ -61,7 +61,7 @@
 	            				<a  href="{{ movie.get_absolute_url }}"> Xem phim <i class="ion-android-arrow-dropright"></i> </a>
 	            			</div>
 							<div class="mv-item-infor">
-								<h6><a href="#">{{movie.title}}</a></h6>
+								<h6><a href="#">{{movie.title| slice:":25"}}</a></h6>
 								<p class="rate"><i class="ion-android-star"></i><span>{{ movie.rating }}</span> </p>
 							</div>
 						</div>	
@@ -80,7 +80,7 @@
 	            				<a  href="{{ movie.get_absolute_url }}"> Xem phim <i class="ion-android-arrow-dropright"></i> </a>
 	            			</div>
 							<div class="mv-item-infor">
-								<h6><a href="#">{{movie.title}}</a></h6>
+								<h6><a href="#">{{movie.title| slice:":25"}}</a></h6>
 								<p class="rate"><i class="ion-android-star"></i><span>{{ movie.rating }}</span> </p>
 							</div>
 						</div>	
