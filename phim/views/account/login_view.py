@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.shortcuts import render,redirect
 from django.views.generic import View
 
+
 #User
 from phim.form.Login import UserLoginForm
 
@@ -15,7 +16,6 @@ class UserLoginView(View):
 
     def post(self, request, *args, **kwargs):
         login_form = UserLoginForm(data=request.POST)
-        print( login_form)
         if login_form.is_valid():
             username = login_form.cleaned_data['username']
             password = login_form.cleaned_data['password']
