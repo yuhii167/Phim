@@ -30,24 +30,24 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 | TT  | Công việc | Thời gian thực hiện (giờ) | 
 | ------------- | ------------- | ------------- | 
-| 1  | Phân tích dữ liệu cho User  | 0.5  |
-| 2  | Tạo dữ liệu mẫu cho User  | 0.5  |
-| 3  | Lập trình lấy dữ liệu  | 0.5  |
-| 4  | Thêm Sửa Xóa User  | 0.5  |
-| 5  | Test User  | 0.5  |
+| 1  | Phân tích dữ liệu cho User  | 0.5  | 1  | | x | 
+| 2  | Tạo dữ liệu mẫu cho User  | 0.5  | 1  | x| x | 
+| 3  | Lập trình lấy dữ liệu  | 0.5  | 1  | x| x | 
+| 4  | Thêm Sửa Xóa User  | 0.5  | 1  |x |  | 
+| 5  | Test User  | 0.5  | 1  | x| x | 
 
 ## Sprint thứ II ( 15/3/2023 -> 28/3/2023): *Hoàn thành thông tin Phim*
 #### Movie
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| 1  | Phân tích dữ liệu cho Movies  | 1  | | x | 
-| 2  | Tạo dữ liệu mẫu cho Movies  | 0.5  | | x |
-| 3  | Lập trình lấy dữ liệu  | 1 | x | |
+| 1  | Phân tích dữ liệu cho Movies  | 2  | x | x | 
+| 2  | Tạo dữ liệu mẫu cho Movies  | 5  | x | x |
+| 3  | Lập trình lấy dữ liệu  | 5 | x | |
 | 4  | Thêm Sửa Xóa Movies  | 0.5  | x |  |
-| 5  | Add Template  | 0.5  | x |  |
-| 6  | Đổ dữ liệu  | 0.5  | x |  |
-| 7  | Test Movies  | 0.5  | | x |
+| 5  | Add Template  | 3  | x |  |
+| 6  | Đổ dữ liệu  | 2  | x |x |
+| 7  | Test Movies  | 5  | x | x |
 
     
 
