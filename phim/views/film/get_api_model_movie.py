@@ -53,3 +53,5 @@ def update_movie(request):
 
     return render(request, 'phim/update_movie.html')
 
+
+

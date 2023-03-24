@@ -36,12 +36,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 4  | Thêm Sửa Xóa User  | 0.5  |
 | 5  | Test User  | 0.5  |
 
-
-#### 8/3/2023
-
-              + Hoàn thành xong các tác vụ liên quan đến User
-              + Add Template
-
+## Sprint thứ II ( 15/3/2023 -> 28/3/2023): *Hoàn thành thông tin Phim*
 #### Movie
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
@@ -54,53 +49,8 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 6  | Đổ dữ liệu  | 0.5  | x |  |
 | 7  | Test Movies  | 0.5  | | x |
 
-#### 9/3/2023
+    
 
-              + Thay đổi chỉnh sửa Template, tạo Layout
-              + Add View Trang Chủ, Đăng Nhập/ Đăng kí
-              + Tạo đường dẫn
-              + Tạo model,View cho Gategory
-              + Tạo model,View cho Movies
-              + Thêm API
-              + Đổ dữ liệu Trang chủ
-              + Hoàn thành Đăng kí/ Đăng nhập
-
-<br/>
-    <div align="center">
-        <h4> View Layout </h4>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_68.png" alt="" />
-    </div>
-    <div align="center">
-        <h4> View Đăng nhập </h4>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_69.png" alt="hi" />
-        <h4> View đăng kí </h4>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_70.png" alt="hi" />
-        <h4> Đổ dữ liệu từ model vào Home </h4>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_71.png" alt="hi" />
-    </div>
-<br/>
-
-
-
-              
-              
-
-#### 10/3/2023
-
-              + Hoàn thành LogOut(10/3/2023)
-              + Tạo model/View/Temp/Url cho Actor(10/3/2023)
-              + Đổ dữ liệu cho Actor(10/03/2023)
-
-<br/>
-    <div align="center">
-        <h4> View Logout </h4>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_72.png" alt="hi" />
-    </div>
-    <div align="center">
-        <h4>Đổ dữ liệu từ model vào Actor </h4>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_73.png" alt="hi" />
-    </div>
-<br/>
 
 #### Actor
 | TT  | Công việc | Thời gian thực hiện (giờ) | 
@@ -113,33 +63,17 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 6  | Đổ dữ liệu  | 0.5  |
 | 7  | Test Movies  | 0.5  |
 
-#### 11/3/2023
 
-              + Tạo View/Temp cho Phim(11/3/2023)
-              + Đổ dữ liệu cho Phim(11/3/2023)
-              + Tạo model/view Ads, đổ dữ liệu vào Home(11/3/2023)
-              + Hoàn thiện Home(11/3/2023)
-              + Tạo View/Temp/Url cho Chi tiết từng Phim(11/03/2023)
-              + Thêm Taggit(11/03/2023)
-<br/>
-    <div align="center">
-        <h3> Đổ dữ liệu từ model vào phimdetail </h3>
-        <img src="https://github.com/nguyenducngoc/Phim/blob/main/flyers/Screenshot_74.png" alt="hi" />
-    </div>
-<br/>
 ____
 
-#### 11/3/2023
-        
-
-              + CN nghỉ(12/03/2023)
 
 
-#### Tông quan Sprint 1
+
+#### Tông quan Sprint 
 | TT  | Sprints | Thời gian(h)  | Sản phẩm  | 
 | ------------- | ------------- | ------------- | ------------- | 
 | 1  | Sprint thứ 1: Tác vụ User  | 3  | Đăng nhập, đăng kí, đăng xuất  |
-| 2  | Sprint thứ 2: Hoàn thiện Home | ...  | ... |
+| 2  | Sprint thứ 2: Hoàn thiện thông tin Phim | 24  | Thành công lưu trữ thông tin phim |
 | 3  | ...  | ... | ...  |
 | 4  | ...  | ...  | ... |
 
