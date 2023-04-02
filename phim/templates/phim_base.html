@@ -140,14 +140,39 @@
 			<!-- /.navbar-collapse -->
 	    </nav>
 	    
-	    <!-- top search form -->
-	    <div class="top-search">
-	    	<select>
-				<option value="united">Phim lẻ</option>
-				<option value="saab">Phim bộ</option>
-			</select>
-			<input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
-	    </div>
+	    <!-- top search form -->\
+	
+		<form method="get" action="{% url 'phim:home' %}" >
+	 	   <div class="top-search">
+			
+	    		<select name="category">
+					<option value="">Tất cả</option>
+					{% for category in categories %}
+					<option value="{{ category.slug }}" >{{ category.name }}</option>
+					{% endfor %}
+				</select>
+				<select name="tags">
+					<option value="">Thể loại</option>
+					{% for tag in tags %}
+						<option value="{{ tag.slug }}">{{ tag.name }}</option>
+					{% endfor %}
+				</select>
+				<select name="release_year">
+					<option>Năm</option>
+					{% for year in release_years %}
+						<option value="{{ year }}">{{ year }}</option>
+					{% endfor %}
+				</select>
+				<select name="country">
+					<option value="">Quốc gia</option>
+					{% for country in countries %}
+					<option value="{{ country.country }}">{{ country.country }} ({{ country.count }})</option>
+					{% endfor %}
+				</select>
+				<button class = "done-search" type="submit">
+				</button>
+	    	</div>
+		</form>
 	</div>
 </header>
 <!-- END | Header -->
