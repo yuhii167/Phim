@@ -193,8 +193,8 @@ $(function(){
 	var multiItemSlider = $('.slick-multiItemSlider');
 	multiItemSlider.slick({
 		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToShow: 5,
+		slidesToScroll: 5,
 		arrows: false,
 		draggable:true,
 		autoplay: true,

@@ -31,6 +31,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
   *,
   *:before,
@@ -5662,7 +5663,7 @@ ul {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgb(2 13 24)
 }
 /*movie single hero*/
 .mv-single-hero {
@@ -6450,6 +6451,7 @@ ul {
   background: #dd003f;
   width: 100%;
 }
+
 .form-style-1 .group-ip {
   display: -webkit-flex;
   display: -moz-box;
@@ -7933,9 +7935,10 @@ header .top-search {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
 header .top-search select,
 header .top-search input {
-  height: 46px;
+  height: 38px;
   border: none;
   background-color: #233a50 !important;
   font-family: 'Nunito', sans-serif;
@@ -7945,7 +7948,7 @@ header .top-search input {
   text-transform: none;
 }
 header .top-search select {
-  width: 20%;
+  width: 30%;
   border-right: 1px solid #020d18;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -7957,7 +7960,7 @@ header .top-search select {
 header .top-search input::-webkit-input-placeholder {
   color: #abb7c4;
 }
-header .top-search input {
+header .top-search button {
   background: url('../images/uploads/topsearch.png') no-repeat right 20px center;
 }
 header #nav-icon1 {
