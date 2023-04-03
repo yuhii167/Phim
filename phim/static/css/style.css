@@ -7937,7 +7937,7 @@ header .top-search {
 }
 
 header .top-search select,
-header .top-search input {
+header .top-search button {
   height: 38px;
   border: none;
   background-color: #233a50 !important;
@@ -7960,9 +7960,7 @@ header .top-search select {
 header .top-search input::-webkit-input-placeholder {
   color: #abb7c4;
 }
-header .top-search button {
-  background: url('../images/uploads/topsearch.png') no-repeat right 20px center;
-}
+
 header #nav-icon1 {
   width: 15px;
   height: 15px;
