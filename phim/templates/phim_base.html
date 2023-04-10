@@ -142,7 +142,7 @@
 	    
 	    <!-- top search form -->\
 	
-		<form method="get" action="{% url 'phim:home' %}" >
+		<form method="get" action="{% url 'phim:search' %}" >
 	 	   <div class="top-search">
 			
 	    		<select name="category">
@@ -158,7 +158,7 @@
 					{% endfor %}
 				</select>
 				<select name="release_year">
-					<option>Năm</option>
+					<option value="">Năm</option>
 					{% for year in release_years %}
 						<option value="{{ year }}">{{ year }}</option>
 					{% endfor %}
@@ -170,7 +170,7 @@
 					{% endfor %}
 				</select>
 				<button class = "done-search" type="submit">
-					Search
+					Tìm 
 				</button>
 	    	</div>
 		</form>

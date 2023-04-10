@@ -113,7 +113,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'phim.context_processors.categories',
                 'phim.context_processors.tags',
-                'phim.context_processors.release_years',
+                'phim.context_processors.years',
                 'phim.context_processors.countries',
             ],
         },
