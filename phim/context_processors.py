@@ -8,9 +8,9 @@ def tags(request):
     tags = MovieSearch.get_tags()
     return {'tags': tags}
 
-def release_years(request):
-    release_years = MovieSearch.get_release_years()
-    return {'release_years': release_years}
+def years(request):
+    years = MovieSearch.get_years()
+    return {'years': years}
 
 def countries(request):
     countries = MovieSearch.get_countries()

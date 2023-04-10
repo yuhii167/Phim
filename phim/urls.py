@@ -13,6 +13,7 @@ from phim.views.film.movie_view import MovieDetailView
 from phim.views.account.user_view import ProfileUserView
 from phim.views.film.get_api_model_movie import update_movie
 from phim.views.film.get_data_movie import update_movie1
+from phim.views.film.movie_search_view import SearchResultView
 
 app_name = "phim"
 
@@ -97,6 +98,11 @@ urlpatterns = [
         name='user_profile'
 
     ),
+    path(
+        route='search/', 
+        view=SearchResultView.as_view(),
+        name='search'
+        )
 
 
     

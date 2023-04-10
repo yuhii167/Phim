@@ -81,7 +81,7 @@ class MovieSearch:
         query = filters.get('query', None)
         category = filters.get('category', None)
         tags = filters.get('tags', None)
-        release_year = filters.get('release_year', None)
+        year = filters.get('year', None)
 
         qs = Movie.objects.all()
 
@@ -95,8 +95,8 @@ class MovieSearch:
         if tags:
             qs = qs.filter(tags__name__in=tags)
 
-        if release_year:
-            qs = qs.filter(release_date__year=release_year)
+        if year:
+            qs = qs.filter(year=year)
 
         return qs
 
@@ -106,19 +106,19 @@ class MovieSearch:
         query = request.GET.get('query')
         category = request.GET.get('category')
         tags = request.GET.getlist('tags')
-        release_year = request.GET.get('release_year')
+        year = request.GET.get('year')
 
-        if query:
+        if query is not None:
             filters['query'] = query.strip()
 
-        if category:
+        if category is not None:
             filters['category'] = category.strip()
 
-        if tags:
+        if tags is not None:
             filters['tags'] = [tag.strip() for tag in tags if tag.strip()]
 
-        if release_year:
-            filters['release_year'] = release_year.strip()
+        if year is not None:
+            filters['year'] = year.strip()
 
         return filters
 
@@ -131,10 +131,9 @@ class MovieSearch:
         return Tag.objects.all()
 
     @staticmethod
-    def get_release_years():
+    def get_years():
         return [year for year in range(timezone.now().year, 1900, -1)]
     
     @staticmethod
     def get_countries():
         return Movie.objects.values('country').annotate(count=Count('country')).order_by('-count')
-

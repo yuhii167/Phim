@@ -1,24 +1,29 @@
 from django.shortcuts import render
-from django.views.generic import ListView
-from django.db.models import Q
+from django.views.generic import View
+from phim.models.movie_model import MovieSearch
+from django.core.paginator import Paginator
 
-from phim.models.movie_model import Movie, Category
+class SearchResultView(View):
+    template_name = 'phim/search_results.html'
+    paginate_by = 100
 
+    def get(self, request, *args, **kwargs):
+        query_params = request.GET.copy()
+        filters = MovieSearch.get_filters(request)
+        movies = MovieSearch.search_movies(filters)
 
-class MovieListView(ListView):
-    model = Movie
-    template_name = 'movie_list.html'
-    context_object_name = 'movies'
-    paginate_by = 10
+        paginator = Paginator(movies, self.paginate_by)
+        page_number = request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        category = self.request.GET.get('category')
-        if category:
-            queryset = queryset.filter(category__slug=category)
-        return queryset
+        context = {
+            'movies': page_obj,
+            'categories': MovieSearch.get_categories(),
+            'tags': MovieSearch.get_tags(),
+            'years': MovieSearch.get_years(),
+            'countries': MovieSearch.get_countries(),
+            'filters': filters,
+            'query_params': query_params,
+        }
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['categories'] = Category.objects.all()
-        return context
+        return render(request, self.template_name, context)

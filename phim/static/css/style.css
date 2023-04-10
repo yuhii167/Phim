@@ -7947,6 +7947,9 @@ header .top-search button {
   font-weight: 300;
   text-transform: none;
 }
+header .top-search button.done-search {
+  border-end-end-radius: 90%;
+}
 header .top-search select {
   width: 30%;
   border-right: 1px solid #020d18;
