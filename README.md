@@ -54,7 +54,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| 3  | Lập trình lấy   | 5 | x | |
+| 3  | Lập trình   | 5 | x | |
 | 5  | Add Template  | 3  | x |x|
 | 6  | Đổ dữ liệu  | 2  | x |x |
 | 7  | Test   | 5  | x | x |
@@ -64,7 +64,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| 3  | Lập trình lấy   | 5 | x | |
+| 3  | Lập trình  | 5 | x | |
 | 5  | Add Template  | 1  | x |x|
 | 6  | Đổ dữ liệu  | 2  | x |x |
 | 7  | Test   | 5  | x | x |
