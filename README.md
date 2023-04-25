@@ -49,7 +49,25 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 6  | Đổ dữ liệu  | 2  | x |x |
 | 7  | Test Movies  | 5  | x | x |
 
-    
+ ## Sprint thứ III ( 28/3/2023 -> 15/4/2023): *Công vụ Tìm kiếm*
+#### Movie
+
+| TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+| 3  | Lập trình lấy   | 5 | x | |
+| 5  | Add Template  | 3  | x |x|
+| 6  | Đổ dữ liệu  | 2  | x |x |
+| 7  | Test   | 5  | x | x |
+
+ ## Sprint thứ IV ( 15/4/2023 -> 25/4/2023): *Thu thập dữ liệu*
+#### Movie
+
+| TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+| 3  | Lập trình lấy   | 5 | x | |
+| 5  | Add Template  | 1  | x |x|
+| 6  | Đổ dữ liệu  | 2  | x |x |
+| 7  | Test   | 5  | x | x |
 
 
 #### Actor
@@ -74,8 +92,8 @@ ____
 | ------------- | ------------- | ------------- | ------------- | 
 | 1  | Sprint thứ 1: Tác vụ User  | 3  | Đăng nhập, đăng kí, đăng xuất  |
 | 2  | Sprint thứ 2: Hoàn thiện thông tin Phim | 24  | Thành công lưu trữ thông tin phim |
-| 3  | ...  | ... | ...  |
-| 4  | ...  | ...  | ... |
+| 3  | Sprint thứ 3: Công cụ tìm kiếm | 24  |Hoàn thành công cụ tìm kiếm |
+| 4  | Sprint thứ 4: Thu thập dữ liệu | 24  |Hoàn thành thu thập dữ liệu |
 
 
               
