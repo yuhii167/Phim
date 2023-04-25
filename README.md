@@ -50,7 +50,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 7  | Test Movies  | 5  | x | x |
 
  ## Sprint thứ III ( 28/3/2023 -> 15/4/2023): *Công vụ Tìm kiếm*
-#### Movie
+#### Công cụ tìm kiếm
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
@@ -60,7 +60,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 7  | Test   | 5  | x | x |
 
  ## Sprint thứ IV ( 15/4/2023 -> 25/4/2023): *Thu thập dữ liệu*
-#### Movie
+#### Thu thập dữ liệu
 
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
