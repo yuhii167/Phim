@@ -69,6 +69,15 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | 6  | Đổ dữ liệu  | 2  | x |x |
 | 7  | Test   | 5  | x | x |
 
+ ## Sprint thứ V ( 25/4/2023 -> 09/5/2023): *Quản lý thông tin tin tức*
+#### Thông tin tin tức
+
+| TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+| 3  | Lập trình  | 5 | x |x |
+| 5  | Add Template  | 1  |  |x|
+| 6  | Đổ dữ liệu  | 2  |  |x |
+| 7  | Test   | 5  | x | x |
 
 #### Actor
 | TT  | Công việc | Thời gian thực hiện (giờ) | 
@@ -94,6 +103,7 @@ ____
 | 2  | Sprint thứ 2: Hoàn thiện thông tin Phim | 24  | Thành công lưu trữ thông tin phim |
 | 3  | Sprint thứ 3: Công cụ tìm kiếm | 24  |Hoàn thành công cụ tìm kiếm |
 | 4  | Sprint thứ 4: Thu thập dữ liệu | 24  |Hoàn thành thu thập dữ liệu |
+| 5  | Sprint thứ 5: Quản lý thông tin tin tức |36  | Hoàn thành thông tin tin tức |
 
 
               
