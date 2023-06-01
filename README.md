@@ -75,7 +75,7 @@ Website hoàn chỉnh, tối ưu, cân bằng tải tốt nhất bằng Dj
 | TT  | Công việc | Thời gian thực hiện (giờ) |  Nguyễn Đức Ngọc | Bùi Xuân Ngọc | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
 | 3  | Lập trình  | 5 | x |x |
-| 5  | Add Template  | 1  |  |x|
+| 5  | Add Template  | 1  | x |x|
 | 6  | Đổ dữ liệu  | 2  |  |x |
 | 7  | Test   | 5  | x | x |
 
